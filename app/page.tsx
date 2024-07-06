@@ -5,6 +5,7 @@ import './global.css';  // Ensure the path is correct
 
 const Home: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,12 +20,23 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const video = document.getElementById('myVideo') as HTMLVideoElement;
-    if (video && isMobile) {
+    if (video) {
       video.play().catch(error => {
         console.error("Error attempting to play video: ", error);
       });
     }
   }, [isMobile]);
+
+  const handlePlay = () => {
+    const video = document.getElementById('myVideo') as HTMLVideoElement;
+    if (video) {
+      video.play().then(() => {
+        setIsVideoPlaying(true);
+      }).catch(error => {
+        console.error("Error attempting to play video: ", error);
+      });
+    }
+  };
 
   return (
     <div className="relative">
@@ -33,6 +45,15 @@ const Home: React.FC = () => {
         <source src="/testvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      {/* Play button for mobile devices */}
+      {isMobile && !isVideoPlaying && (
+        <div className="absolute inset-0 flex items-center justify-center z-20">
+          <button onClick={handlePlay} className="bg-white p-4 rounded-full text-black">
+            Play Video
+          </button>
+        </div>
+      )}
 
       {/* Overlay content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
