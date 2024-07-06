@@ -1,65 +1,119 @@
-import { Metadata } from "next"
-import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "lp-items"
+"use client";
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import '/app/global.css'; // Import the CSS file
+import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: "Next.js Enterprise Boilerplate",
-  twitter: {
-    card: "summary_large_image",
-  },
-  openGraph: {
-    url: "https://next-enterprise.vercel.app/",
-    images: [
-      {
-        width: 1200,
-        height: 630,
-        url: "https://raw.githubusercontent.com/Blazity/next-enterprise/main/.github/assets/project-logo.png",
-      },
-    ],
-  },
-}
+const Navbar: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(false);
 
-export default function Web() {
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setDarkMode(prefersDarkMode);
+  }, []);
+
   return (
-    <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-              Next.js Enterprise Boilerplate
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
-            </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
-              Deploy Now
-            </Button>
+    <header className="w-full fixed top-0 left-0 z-10 shadow-lg h-16 flex justify-between items-center bg-white">
+      <Link href="/" className="flex items-center ml-4 mr-4">
+        <Image
+          className="h-12 w-auto"
+          src="/yci.svg"
+          alt="YCI Logo"
+          width={80}
+          height={80}
+        />
+      </Link>
+      <div className="flex-grow flex items-center justify-end">
+        <Link href="/learn" className="ml-4 text-gray-800 hover:text-green-500">Learn</Link>
+        <Link href="/contact" className="ml-4 text-gray-800 hover:text-green-500">Contact</Link>
+        <Link href="/join" className="button1 ml-4">Join</Link>
+        <Link href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation" target="_blank" rel="noopener noreferrer" className="flex items-center ml-4 mr-4">
+          <span className="button2">Donate</span>
+        </Link>
+      </div>
+    </header>
+  );
+};
+
+const Home: React.FC = () => {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between pt-10">
+      <Navbar />
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch] pt-3"></p>
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+        navigation
+        pagination={{ clickable: true }}
+        spaceBetween={50}
+        slidesPerView={1}
+        autoplay={{ delay: 5000 }}
+        className="w-full h-full"
+      >
+        <SwiperSlide>
+          <div className="relative">
+            <Image className="d-block w-100" src="/news.png" alt="First slide" layout="responsive" width={80} height={80} />
           </div>
-        </div>
-      </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900 lg:h-12 lg:w-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={"slide"}>
+            <Image className="d-block w-100" src="/news.png" alt="Second slide" layout="responsive" width={80} height={80} />
           </div>
-        </div>
-      </section>
-    </>
-  )
-}
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={"slide"}>
+            <Image className="d-block w-100" src="/news.png" alt="Third slide" layout="responsive" width={80} height={80} />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+      <br />
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]"> Let&apos;s Reduce Emissions </p>
+      <p className="mb-3 text-xl text-center max-w-[50ch] pr-3 pl-3"> We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent than carbon dioxide—each year.</p>
+      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
+        <a
+          href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation"
+          className="custom-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">Our Chapters</h2>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Curb climate change by locating an existing chapter or starting a new one!</p>
+        </a>
+        <a
+          href="https://www.deq.nc.gov/waste-management/dwm/sw/field-operations/environmental-monitoring/landfillgasmonitoringguidancedocument/download"
+          className="custom-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">Policy & Advocacy</h2>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Policy reform is integral to incite meaningful change—we&apos;ve started in NC.</p>
+        </a>
+        <a
+          href="https://www.instagram.com/youth_climate_initiative/"
+          className="custom-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">Keep Up</h2>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Stay up to date with our mission through our social media.</p>
+        </a>
+        <a
+          href="https://www.nrdc.org/stories/millions-leaky-and-abandoned-oil-and-gas-wells-are-threatening-lives-and-climate"
+          className="custom-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">The Science</h2>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Find in-depth information about the climate science behind open methane wells.</p>
+        </a>
+      </div>
+    </main>
+  );
+};
+
+export default Home;
