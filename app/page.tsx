@@ -1,9 +1,9 @@
 "use client";
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
-        className="w-full h-full"
+        className="size-full"
       >
         <SwiperSlide>
           <div className="relative">
@@ -72,8 +72,8 @@ const Home: React.FC = () => {
         </SwiperSlide>
       </Swiper>
       <br />
-      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]"> Let's Reduce Emissions </p>
-      <p className="mb-3 text-xl text-center max-w-[50ch] pr-3 pl-3"> We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>
+      <p className="mb-3 text-xl text-center max-w-[50ch] px-3">We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
           href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation"
