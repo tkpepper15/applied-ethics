@@ -2,197 +2,192 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
+/* Video background */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 1;
 }
 
-/* Swiper Navigation and Pagination Styling */
-.swiper-button-prev,
-.swiper-button-next {
-  color: #0bcd42 !important;
+/* Layout and container */
+.fixed-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.swiper-pagination-bullet {
-  background: #0bcd42 !important;
+.h-16 {
+  height: 4rem;
 }
 
-/* Swiper Container Styling */
-.swiper-container {
-  width: 100%;
-  height: 80vh; /* Default height for desktop */
+.bg-white {
+  background-color: #fff;
 }
 
-/* Adjust Swiper Container Height for Mobile */
-@media (max-width: 768px) {
-  .swiper-container {
-    height: 300px;
-  }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-/* Adjust Swiper Container Height for Larger Screens */
-@media (min-width: 1024px) {
-  .swiper-container {
-    height: 50vh; /* Shorter height for larger screens */
-  }
+.min-h-screen {
+  min-height: 100vh;
 }
 
-/* Swiper Image Styling */
-.swiper-container .swiper-zoom-container>img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  max-height: 100%;
+.pt-16 {
+  padding-top: 4rem;
 }
 
-/* Swiper Wrapper and Slide Styles */
-.swipper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  overflow: hidden; /* Ensure overflow is hidden to prevent horizontal scrolling */
-}
-
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
-
-/* Hide buttons in mobile */
-@media (max-width: 768px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none !important;
-  }
-}
-
-.use-client {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid transparent;
-  border-radius: 0.375rem; /* Rounded corners */
-  font-weight: bold;
-  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-}
-
-.use-client:hover {
-  transform: translateX(1px);
-  border-color: #9dd965; /* Green border color on hover */
-  background-color: rgba(157, 217, 101, 0.2); /* Slightly green background on hover */
-}
-
-.button2 {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 9px;
-  font-weight: bold;
+.text-center {
   text-align: center;
-  border-radius: 0.375rem; /* Rounded corners */
-  color: #0bcd42; /* Green text */
-  background-color: white; /* White background */
-  border: 2px solid #0bcd42; /* Green outline */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
 }
 
-.button2:hover {
-  background-color: #0bcd42; /* Green fill on hover */
-  color: white; /* White text on hover */
+.max-w-4xl {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.button1 {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 9px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 0.375rem; /* Rounded corners */
-  color: black; /* Black text */
-  background-color: white; /* White background */
-  border: 2px solid black; /* Black outline */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
-.button1:hover {
-  background-color: black; /* Black fill on hover */
-  color: white; /* White text on hover */
+/* Typography */
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fff;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #fff;
+}
+
+/* Grid and layout */
+.grid {
+  display: grid;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+/* Links and buttons */
 .custom-link {
   display: inline-block;
-  padding: 10px 20px;
-  margin: 10px; /* Add spacing between tiles */
-  border: 2px solid #9dd965; /* Green outline */
-  border-radius: 8px;
-  transition: border-color 0.3s, background-color 0.3s;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   text-decoration: none;
-  color: inherit;
+  transition: background-color 0.3s ease;
 }
 
 .custom-link:hover {
-  border-color: #9dd965;
-  background-color: #9dd965;
+  background-color: #9ad962;
 }
 
-.custom-link:hover::after {
-  transform: translateX(5px);
+.bg-black {
+  background-color: #000;
 }
 
-@media (min-width: 768px) {
-  .button {
-    padding-left: 7px;
-    padding-right: 8px;
-  }
+.text-white {
+  color: #fff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  /* Adjust container width and margin */
-  .container {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  /* Increase card width and margin */
-  .card {
-    width: 90%;
-    margin: 20px auto; /* Adjust margin as needed */
-  }
-
-  /* Increase text size */
-  .text {
-    font-size: 16px; /* Adjust font size as needed */
-  }
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hover\:bg-green-500:hover {
+  background-color: #38a169;
+}
+
+.hover\:text-green-500:hover {
+  color: #38a169;
+}
+
+/* Custom hover effect */
 .custom-hover {
-  display: inline-block;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .custom-hover:hover {
   transform: translateX(1px);
-  background-color: rgba(157, 217, 101, 0.2); /* Slightly green background on hover */
+  background-color: rgba(157, 217, 101, 0.2);
 }
 
-/* Add this if you want to support motion-reduce preference */
 @media (prefers-reduced-motion) {
   .custom-hover {
     transform: none;
   }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* Adjust body padding for fixed navbar */
+body {
+  padding-top: 18rem; /* Adjust to match the height of your fixed navbar */
 }

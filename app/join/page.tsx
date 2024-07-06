@@ -1,6 +1,11 @@
+import Navbar from 'app/navbar';
+import '/app/global.css';
+
 const Join: React.FC = () => {
-    return <div>Join Page Content</div>;
+    return <div>
+      <Navbar />
+      </div>;
   };
-  
+
   export default Join;
   
