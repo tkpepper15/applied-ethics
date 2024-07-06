@@ -17,17 +17,19 @@ const Home: React.FC = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const handlePlay = () => {
+  useEffect(() => {
     const video = document.getElementById('myVideo') as HTMLVideoElement;
-    if (video) {
-      video.play();
+    if (video && isMobile) {
+      video.play().catch(error => {
+        console.error("Error attempting to play video: ", error);
+      });
     }
-  };
+  }, [isMobile]);
 
   return (
     <div className="relative">
       {/* Video background */}
-      <video autoPlay={!isMobile} muted loop id="myVideo" className="absolute inset-0 object-cover w-full h-full z-0">
+      <video autoPlay muted loop playsInline id="myVideo" className="absolute inset-0 object-cover w-full h-full z-0">
         <source src="/testvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
