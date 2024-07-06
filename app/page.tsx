@@ -1,7 +1,23 @@
+import React, { useEffect } from 'react';
 import Navbar from 'app/navbar';
 import '/app/global.css';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    const video = document.getElementById('myVideo') as HTMLVideoElement;
+    if (video) {
+      // Check if the device width is greater than a certain threshold (e.g., 768px for tablets)
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile) {
+        video.removeAttribute('autoplay');
+        video.removeAttribute('loop');
+        video.removeAttribute('muted');
+        video.pause();
+      }
+    }
+  }, []);
+
   return (
     <div className="relative">
       {/* Video background */}
@@ -15,8 +31,8 @@ const Home: React.FC = () => {
         <Navbar />
         <main className="flex flex-col items-center justify-start pt-16 px-6 lg:px-0 text-white">
           <section className="text-center max-w-4xl mx-auto mb-8">
-            <br></br>
-            <h1 className="mb-4 text-4xl font-bold">Let&apos;s Reduce Emissions</h1>
+            <br />
+            <h1 className="mb-4 text-4xl font-bold">Let's Reduce Emissions</h1>
             <p className="text-lg">
               We aim to shut down abandoned wells that each spew many metric tons of methane—which is 28X as potent as carbon dioxide—each year.
             </p>

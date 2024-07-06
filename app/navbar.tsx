@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
           <a href="/contact" className="block text-white hover:text-green-500">Contact</a>
           <a href="/join" className="block text-white hover:text-green-500">Join</a>
           <a
-            href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation"
+            href="https://donorbox.org/youth-climate-initiative-yci-plugs-allen-30-an-orphan-oil-well-in-montana?t=updates#info"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-white hover:text-green-500"
