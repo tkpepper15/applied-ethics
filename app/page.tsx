@@ -1,14 +1,14 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import '/app/global.css'; // Import the CSS file
-import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-10 shadow-lg h-16 flex justify-between items-center bg-white">
-      <Link href="/" className="flex items-center ml-4 mr-4">
+      <Link href="/" className="flex items-center mx-4">
         <Image
           className="h-12 w-auto"
           src="/yci.svg"
@@ -29,11 +29,11 @@ const Navbar: React.FC = () => {
           height={80}
         />
       </Link>
-      <div className="flex-grow flex items-center justify-end">
+      <div className="grow flex items-center justify-end">
         <Link href="/learn" className="ml-4 text-gray-800 hover:text-green-500">Learn</Link>
         <Link href="/contact" className="ml-4 text-gray-800 hover:text-green-500">Contact</Link>
         <Link href="/join" className="button1 ml-4">Join</Link>
-        <Link href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation" target="_blank" rel="noopener noreferrer" className="flex items-center ml-4 mr-4">
+        <Link href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation" target="_blank" rel="noopener noreferrer" className="flex items-center mx-4">
           <span className="button2">Donate</span>
         </Link>
       </div>
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
       <Navbar />
       <p className="mb-3 text-3xl font-bold text-center max-w-[50ch] pt-3"></p>
       <Swiper
-        modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+        modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
         spaceBetween={50}
@@ -61,19 +61,19 @@ const Home: React.FC = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={"slide"}>
+          <div className="slide">
             <Image className="d-block w-100" src="/news.png" alt="Second slide" layout="responsive" width={80} height={80} />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={"slide"}>
+          <div className="slide">
             <Image className="d-block w-100" src="/news.png" alt="Third slide" layout="responsive" width={80} height={80} />
           </div>
         </SwiperSlide>
       </Swiper>
       <br />
-      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]"> Let&apos;s Reduce Emissions </p>
-      <p className="mb-3 text-xl text-center max-w-[50ch] pr-3 pl-3"> We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent than carbon dioxide—each year.</p>
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]"> Let's Reduce Emissions </p>
+      <p className="mb-3 text-xl text-center max-w-[50ch] pr-3 pl-3"> We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
           href="https://donorbox.org/youth-climate-initiative-supports-the-well-done-foundation"
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
           rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">Policy & Advocacy</h2>
-          <p className="m-0 max-w-[50ch] text-sm opacity-50">Policy reform is integral to incite meaningful change—we&apos;ve started in NC.</p>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Policy reform is integral to incite meaningful change—we've started in NC.</p>
         </a>
         <a
           href="https://www.instagram.com/youth_climate_initiative/"
