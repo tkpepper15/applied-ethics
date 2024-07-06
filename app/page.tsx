@@ -1,8 +1,8 @@
 "use client";
+import Link from 'next/link';  // Import Link before react
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';  // Sort alphabetically
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,11 +11,9 @@ import 'swiper/css/effect-coverflow';
 import '/app/global.css'; // Import the CSS file
 
 const Navbar: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
   useEffect(() => {
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setDarkMode(prefersDarkMode);
+    // Remove the line assigning value to darkMode since it is not used
   }, []);
 
   return (
@@ -47,7 +45,7 @@ const Home: React.FC = () => {
       <Navbar />
       <p className="mb-3 text-3xl font-bold text-center max-w-[50ch] pt-3"></p>
       <Swiper
-        modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
+        modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}  // Alphabetically sorted
         navigation
         pagination={{ clickable: true }}
         spaceBetween={50}
@@ -72,7 +70,7 @@ const Home: React.FC = () => {
         </SwiperSlide>
       </Swiper>
       <br />
-      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>  // Escape the single quote
       <p className="mb-3 text-xl text-center max-w-[50ch] px-3">We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
