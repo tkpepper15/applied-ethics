@@ -1,28 +1,33 @@
-"use client"
-import React, { useEffect } from 'react';
-import Navbar from 'app/navbar';
-import '/app/global.css';
+"use client";
+import React, { useEffect, useState } from 'react';
+import Navbar from './navbar';  // Ensure the path is correct
+import './global.css';  // Ensure the path is correct
 
 const Home: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial state
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handlePlay = () => {
     const video = document.getElementById('myVideo') as HTMLVideoElement;
     if (video) {
-      // Check if the device width is greater than a certain threshold (e.g., 768px for tablets)
-      const isMobile = window.innerWidth <= 768;
-
-      if (isMobile) {
-        video.removeAttribute('autoplay');
-        video.removeAttribute('loop');
-        video.removeAttribute('muted');
-        video.pause();
-      }
+      video.play();
     }
-  }, []);
+  };
 
   return (
     <div className="relative">
       {/* Video background */}
-      <video autoPlay muted loop id="myVideo" className="absolute inset-0 object-cover w-full h-full z-0">
+      <video autoPlay={!isMobile} muted loop id="myVideo" className="absolute inset-0 object-cover w-full h-full z-0">
         <source src="/testvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
