@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import Navbar from 'app/navbar';
 import '/app/global.css';
@@ -34,7 +35,7 @@ const Home: React.FC = () => {
             <br />
             <h1 className="mb-4 text-4xl font-bold">Let's Reduce Emissions</h1>
             <p className="text-lg">
-              We aim to shut down abandoned wells that each spew many metric tons of methane—which is 28X as potent as carbon dioxide—each year.
+              We aim to shut down abandoned wells that spew metric tons of methane—which is 28X as potent as carbon dioxide—each year.
             </p>
           </section>
           <a
