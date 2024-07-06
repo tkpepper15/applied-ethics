@@ -189,5 +189,5 @@
 
 /* Adjust body padding for fixed navbar */
 body {
-  padding-top: 18rem; /* Adjust to match the height of your fixed navbar */
+  padding-top: 16rem; /* Adjust to match the height of your fixed navbar */
 }

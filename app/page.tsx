@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <main className="flex flex-col items-center justify-start pt-16 px-6 lg:px-0 text-white">
           <section className="text-center max-w-4xl mx-auto mb-8">
             <br></br>
-            <h1 className="mb-4 text-4xl font-bold">Let's Reduce Emissions</h1>
+            <h1 className="mb-4 text-4xl font-bold">Let&apos;s Reduce Emissions</h1>
             <p className="text-lg">
               We aim to shut down abandoned wells that each spew many metric tons of methane—which is 28X as potent as carbon dioxide—each year.
             </p>
