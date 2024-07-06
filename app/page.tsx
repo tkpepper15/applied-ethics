@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         </SwiperSlide>
       </Swiper>
       <br />
-      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Reduce Emissions Now</p>
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>
       <p className="mb-3 text-xl text-center max-w-[50ch] px-3">We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
@@ -89,7 +89,7 @@ const Home: React.FC = () => {
           rel="noopener noreferrer"
         >
           <h2 className="mb-3 text-2xl font-semibold">Policy & Advocacy</h2>
-          <p className="m-0 max-w-[50ch] text-sm opacity-50">Policy reform is integral to incite meaningful change—we've started in NC.</p>
+          <p className="m-0 max-w-[50ch] text-sm opacity-50">Policy reform is integral to incite meaningful change—we&apos;ve started in NC.</p>
         </a>
         <a
           href="https://www.instagram.com/youth_climate_initiative/"
