@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         </SwiperSlide>
       </Swiper>
       <br />
-      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>  // Escape the single quote
+      <p className="mb-3 text-3xl font-bold text-center max-w-[50ch]">Let&apos;s Reduce Emissions</p>
       <p className="mb-3 text-xl text-center max-w-[50ch] px-3">We aim to shut down abandoned wells that each spew upwards of 280k metric tons of methane—which is 28X as potent as carbon dioxide—each year.</p>
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         <a
