@@ -1,67 +1,36 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from 'react';
 import Navbar from './navbar';  // Ensure the path is correct
 import './global.css';  // Ensure the path is correct
 
 const Home: React.FC = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Set initial state
+    // Initial call to set initial state
+    handleResize();
+
+    // Event listener for window resize
     window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize);
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
-
-  useEffect(() => {
-    const video = document.getElementById('myVideo') as HTMLVideoElement;
-    if (video) {
-      video.play().catch(error => {
-        console.error("Error attempting to play video: ", error);
-      });
-    }
-  }, [isMobile]);
-
-  const handlePlay = () => {
-    const video = document.getElementById('myVideo') as HTMLVideoElement;
-    if (video) {
-      video.play().then(() => {
-        setIsVideoPlaying(true);
-      }).catch(error => {
-        console.error("Error attempting to play video: ", error);
-      });
-    }
-  };
 
   return (
     <div className="relative">
-      {/* Video background */}
-      <video autoPlay muted loop playsInline id="myVideo" className="absolute inset-0 object-cover w-full h-full z-0">
-        <source src="/testvideo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Play button for mobile devices */}
-      {isMobile && !isVideoPlaying && (
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <button onClick={handlePlay} className="bg-white p-4 rounded-full text-black">
-            Play Video
-          </button>
-        </div>
-      )}
-
       {/* Overlay content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
         <Navbar />
         <main className="flex flex-col items-center justify-start pt-16 px-6 lg:px-0 text-white">
           <section className="text-center max-w-4xl mx-auto mb-8">
-            <br />
-            <h1 className="mb-4 text-4xl font-bold">Let&apos;s Reduce Emissions</h1>
+            <h1 className="mb-4 text-4xl font-bold">Let's Reduce Emissions</h1>
             <p className="text-lg">
               We aim to shut down abandoned wells that spew metric tons of methane—which is 28X as potent as carbon dioxide—each year.
             </p>

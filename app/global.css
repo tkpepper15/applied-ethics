@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Video background */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  opacity: 1;
-}
-
 /* Layout and container */
 .fixed-nav {
   position: fixed;
@@ -117,6 +106,7 @@
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  border: 2px solid #9ad962;
 }
 
 .custom-link:hover {
@@ -190,4 +180,5 @@
 /* Adjust body padding for fixed navbar */
 body {
   padding-top: 14rem; /* Adjust to match the height of your fixed navbar */
+  background: black;
 }
