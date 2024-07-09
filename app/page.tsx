@@ -24,10 +24,10 @@ const Home: React.FC = () => {
         <section className="text-center max-w-4xl mx-auto mb-8">
           <h1 className="mb-4 text-4xl font-bold">How Corporate Ownership Shapes Big Pharma</h1>
           <p className="text-lg">
-            Discover how ownership structures, combined with bioethics, mission-driven innovation, and financials, influence the pharma and biotech industry.
+            To gauge your perspective, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the pharmaceutical and biotechnology industries.
           </p>
         </section>
-        <h1 className="mb-4 text-2xl font-bold">Legislative Timeline</h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Legislative Timeline (US/EU)</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {items.map(item => (
@@ -35,6 +35,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
+        <h1 className="ml-4 mt-4 mb-4 text-2xl font-bold">Financial Breakdown</h1>
       </main>
     </div>
   );
