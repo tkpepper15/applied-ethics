@@ -11,7 +11,8 @@ const Home: React.FC = () => {
         <section className="text-center max-w-4xl mx-auto mb-8">
           <h1 className="mb-4 text-4xl font-bold">Welcome!</h1>
           <p className="text-lg">
-          This site (in progress) is for surveys that assess the public's perception of ethical dilemmas. Built by Tejjas Kaul.
+          This site (in progress) is for surveys that assess the public&apos;s perception of ethical dilemmas. By providing the respondent with background information and objective material—biases can be reduced.
+          Built by Tejjas Kaul.
           </p>
           <br></br>
           <p>
