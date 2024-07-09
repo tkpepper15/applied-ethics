@@ -23,8 +23,8 @@ const Navbar: React.FC = () => {
       <div className="flex items-center space-x-6">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="/survey" className="text-white hover:text-green-500">Survey</a>
-          <a href="/contact" className="text-white hover:text-green-500">Contact</a>
+          <a href="/surveys" className="text-white hover:text-green-500">Surveys</a>
+          <a href="/reports" className="text-white hover:text-green-500">Reports</a>
         </nav>
         
         {/* Mobile Navigation Toggle */}
@@ -46,8 +46,8 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden fixed top-16 left-0 w-full h-screen bg-black bg-opacity-50 backdrop-blur-lg shadow-lg py-4 px-6 ${isOpen ? 'block' : 'hidden'}`}>
         <nav className="space-y-4">
-          <a href="/survey" className="block text-white hover:text-green-500">Survey</a>
-          <a href="/contact" className="block text-white hover:text-green-500">Contact</a>
+          <a href="/surveys" className="block text-white hover:text-green-500">Surveys</a>
+          <a href="/reports" className="block text-white hover:text-green-500">Reports</a>
         </nav>
       </div>
     </header>

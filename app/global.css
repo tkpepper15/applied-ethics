@@ -65,14 +65,15 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Dark background for links */
   color: #fff; /* White text color */
   text-decoration: none;
-  border: 2px solid blue; /* Accent color for border */
-  transition: background-color 0.3s ease;
+  border: 2px solid; /* Accent color for border */
+  border-radius: 8px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
 }
 
 .custom-link:hover {
-  background-color: blue; /* Accent color on hover */
+  background-color: green; /* Accent color on hover */
 }
-
 /* Grid */
 .grid {
   display: grid;
