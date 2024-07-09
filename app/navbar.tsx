@@ -14,26 +14,17 @@ const Navbar: React.FC = () => {
         {/* Only show the logo on desktop and not in mobile menu */}
         <a href="/" className={`flex items-center ${isOpen ? 'hidden' : 'block'}`}>
           <img
-            src="/yci.svg"
-            alt="YCI Logo"
-            className="h-8 w-auto"
+            src="/logo.svg"
+            alt="Logo"
+            className="h-6 w-auto"
           />
         </a>
       </div>
       <div className="flex items-center space-x-6">
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="/learn" className="text-white hover:text-green-500">Learn</a>
+          <a href="/ai" className="text-white hover:text-green-500">AI</a>
           <a href="/contact" className="text-white hover:text-green-500">Contact</a>
-          <a href="/join" className="text-white hover:text-green-500">Join</a>
-          <a
-            href="https://donorbox.org/youth-climate-initiative-yci-plugs-allen-30-an-orphan-oil-well-in-montana?t=updates#info"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-green-500"
-          >
-            <span>Donate</span>
-          </a>
         </nav>
         
         {/* Mobile Navigation Toggle */}
@@ -55,17 +46,8 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden fixed top-16 left-0 w-full h-screen bg-black bg-opacity-50 backdrop-blur-lg shadow-lg py-4 px-6 ${isOpen ? 'block' : 'hidden'}`}>
         <nav className="space-y-4">
-          <a href="/learn" className="block text-white hover:text-green-500">Learn</a>
+          <a href="/ai" className="block text-white hover:text-green-500">AI</a>
           <a href="/contact" className="block text-white hover:text-green-500">Contact</a>
-          <a href="/join" className="block text-white hover:text-green-500">Join</a>
-          <a
-            href="https://donorbox.org/youth-climate-initiative-yci-plugs-allen-30-an-orphan-oil-well-in-montana?t=updates#info"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-white hover:text-green-500"
-          >
-            <span>Donate</span>
-          </a>
         </nav>
       </div>
     </header>

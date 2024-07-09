@@ -1,12 +1,12 @@
 import Navbar from 'app/navbar';
 import '/app/global.css';
 
-const Contact: React.FC = () => {
+const AI: React.FC = () => {
     return <div>
       <Navbar />
     </div>;
   };
 
   
-  export default Contact;
+  export default AI;
   
