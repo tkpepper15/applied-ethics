@@ -112,7 +112,7 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
-          <h1 className="mb-4 text-4xl font-bold ml-4">How Corporate Ownership Shapes the Biotech and Pharma Industries</h1>
+          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries</h1>
           <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
           <p className="text-lg ml-4 mb-4">
   Considering the importance of biologics and pharmaceuticals to the mass market:
