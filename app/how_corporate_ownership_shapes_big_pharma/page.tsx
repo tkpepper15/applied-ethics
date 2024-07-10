@@ -17,9 +17,8 @@ const legalItems: TimelineItemProps[] = [
 ];
 
 const finItems: TimelineItemProps[] = [
-  { id: 1, title: '2000: Human Genome Project Completed', content: 'The first draft of the human genome was completed.' },
-  { id: 2, title: '2010: Affordable Care Act', content: 'Major healthcare reform legislation was passed.' },
-  { id: 3, title: '2020: COVID-19 Pandemic', content: 'The COVID-19 pandemic had significant global impacts.' },
+  { id: 1, title: 'Institutional Investment', content: 'Few institutional investment firms own large portions of many of the largest pharma companies.' },
+  { id: 2, title: 'Physicians Against Corporate Pharma', content: 'Many doctors believe that pharma’s corporate ownership worsens the patient care system.' },
 ];
 
 const Home: React.FC = () => {
@@ -37,7 +36,7 @@ const Home: React.FC = () => {
           <p className='text-lg ml-4 mb-4'>To gauge your perspective, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the pharmaceutical and biotechnology industries.
           </p>
         </section>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Legislative Timeline (US/EU)</h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Legislative Landscape</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {legalItems.map(item => (
@@ -53,12 +52,9 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Blank Timeline</h1>
-        <div className="timeline-container">
-          <div id="timeline" className="timeline flex">
-            {/* Add items for the blank timeline if needed */}
-          </div>
-        </div>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Studies</h1>
+        <p className="mb-4 ml-4">The Lilly Endowment (offshoot of Eli Lilly) and how they operate to see how the landscape has changed throughout time while supporting it with data:
+      </p>
       </main>
     </div>
   );
