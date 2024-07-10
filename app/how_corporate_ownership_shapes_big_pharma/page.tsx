@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Breakdown</h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {finItems.map(item => (
@@ -164,9 +164,6 @@ const Home: React.FC = () => {
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
-<p className="mb-4 ml-4">
-  The Lilly Endowment (offshoot of Eli Lilly) and how they operate to see how the landscape has changed throughout time while supporting it with data:
-</p>
 <p className="mb-4 ml-4">
   Comparing Eli Lilly and Novo Nordisk highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
 </p>
