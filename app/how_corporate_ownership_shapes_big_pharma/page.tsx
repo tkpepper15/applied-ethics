@@ -10,23 +10,10 @@ const osItems = [
     title: 'Public Charity',
     content: `
       Definition: An organization that receives a substantial portion of its funding from the general public, government grants, or other public sources.
-      
       Tax Code: Section 501(c)(3)
-      
-      Characteristics:
-      - Funding Sources: At least one-third from public sources.
-      - Public Support Test: Must pass to maintain status.
-      - Activities: Operate direct services (e.g., schools, hospitals).
-      - Board of Directors: Broad-based and community-involved.
-      - Tax Benefits: Contributions deductible up to 60% of AGI.
-      - Regulation: Stringent, focused on public interest.
-      
-      Examples:
-      - American Red Cross
-      - St. Jude Children’s Research Hospital
-      - Doctors Without Borders
-      
       Impact on Pharmaceuticals: Public charities can drive mission-driven innovation by focusing on public health needs and ensuring accessibility. However, limited financial resources may constrain large-scale R&D and innovation.
+      Examples: American Red Cross, St. Jude Children’s Research Hospital, Doctors Without Borders
+      Characteristics: Funding Sources - At least one-third from public sources ∙ Public Support Test - Must pass to maintain status ∙ Activities - Operate direct services (e.g., schools, hospitals) ∙ Board of Directors - Broad-based and community-involved ∙ Tax Benefits - Contributions deductible up to 60% of AGI ∙ Regulation - Stringent, focused on public interest.
     `
   },
   {
@@ -34,23 +21,10 @@ const osItems = [
     title: 'Private Charity (Private Foundation)',
     content: `
       Definition: An organization typically funded by a single source or small group of sources.
-      
       Tax Code: Section 501(c)(3)
-      
-      Characteristics:
-      - Funding Sources: Mainly from one source or family.
-      - Public Support Test: Not required.
-      - Activities: Often grant-making rather than direct operations.
-      - Board of Directors: Smaller, centralized, often family.
-      - Tax Benefits: Contributions deductible up to 30% of AGI.
-      - Regulation: Specific rules on self-dealing, distributions, and political activities.
-      
-      Examples:
-      - Bill & Melinda Gates Foundation
-      - Howard Hughes Medical Institute
-      - Rockefeller Foundation
-      
       Impact on Pharmaceuticals: Private foundations can ensure long-term funding and focus on niche areas of public interest. However, they may lack the financial dynamics and competitive drive of publicly traded corporations.
+      Examples: Bill & Melinda Gates Foundation, Howard Hughes Medical Institute, Rockefeller Foundation
+      Characteristics: Funding Sources - Mainly from one source or family ∙ Public Support Test - Not required ∙ Activities - Often grant-making rather than direct operations ∙ Board of Directors - Smaller, centralized, often family ∙ Tax Benefits - Contributions deductible up to 30% of AGI ∙ Regulation - Specific rules on self-dealing, distributions, and political activities.
     `
   },
   {
@@ -58,25 +32,10 @@ const osItems = [
     title: 'Charitable Trust',
     content: `
       Definition: A trust created to achieve a charitable purpose.
-      
       Tax Code: Sections 4947(a)(1) for charitable remainder trusts and 4947(a)(2) for other charitable trusts
-      
-      Characteristics:
-      - Funding Sources: Can be funded by individuals, families, or other donors.
-      - Types:
-        - Charitable Remainder Trusts: Provide income to beneficiaries for a period, with remaining assets going to charity.
-        - Charitable Lead Trusts: Provide income to charity for a period, with remaining assets going to beneficiaries.
-      - Activities: Trust assets managed to benefit charitable purposes.
-      - Trustee: Managed by trustees who have fiduciary responsibilities.
-      - Tax Benefits: Donors can receive income tax deductions, estate, and gift tax benefits.
-      - Regulation: Subject to specific rules regarding distributions and tax benefits depending on the type of trust.
-      
-      Examples:
-      - The Pew Charitable Trusts
-      - The Wellcome Trust
-      - Charitable Remainder Unitrusts (various)
-      
       Impact on Pharmaceuticals: Charitable trusts can ensure sustained funding and alignment with public interest goals. Their structure can promote bioethics and mission-driven innovation but may not be agile enough to compete in a fast-paced market.
+      Examples: The Pew Charitable Trusts, The Wellcome Trust, Charitable Remainder Unitrusts (various)
+      Characteristics: Funding Sources - Can be funded by individuals, families, or other donors ∙ Types - Charitable Remainder Trusts: Provide income to beneficiaries for a period, with remaining assets going to charity. Charitable Lead Trusts: Provide income to charity for a period, with remaining assets going to beneficiaries ∙ Activities - Trust assets managed to benefit charitable purposes ∙ Trustee - Managed by trustees who have fiduciary responsibilities ∙ Tax Benefits - Donors can receive income tax deductions, estate, and gift tax benefits ∙ Regulation - Subject to specific rules regarding distributions and tax benefits depending on the type of trust.
     `
   },
   {
@@ -84,22 +43,10 @@ const osItems = [
     title: 'Donor-Advised Fund (DAF)',
     content: `
       Definition: A philanthropic vehicle established at a public charity.
-      
       Tax Code: Section 4966
-      
-      Characteristics:
-      - Funding Sources: Funded by donors who retain advisory privileges.
-      - Activities: Donors recommend grants to other charities.
-      - Sponsor: Managed by public charities or financial institutions.
-      - Tax Benefits: Immediate tax deductions at the time of donation.
-      - Regulation: Managed by the sponsoring organization with oversight.
-      
-      Examples:
-      - Fidelity Charitable
-      - Schwab Charitable
-      - National Philanthropic Trust
-      
       Impact on Pharmaceuticals: DAFs offer flexibility and immediate funding potential, allowing for rapid response to emerging health needs. However, the lack of direct control over operational activities can limit their impact on long-term pharmaceutical innovation.
+      Examples: Fidelity Charitable, Schwab Charitable, National Philanthropic Trust
+      Characteristics: Funding Sources - Funded by donors who retain advisory privileges ∙ Activities - Donors recommend grants to other charities ∙ Sponsor - Managed by public charities or financial institutions ∙ Tax Benefits - Immediate tax deductions at the time of donation ∙ Regulation - Managed by the sponsoring organization with oversight.
     `
   },
   {
@@ -107,22 +54,10 @@ const osItems = [
     title: 'Supporting Organization',
     content: `
       Definition: A charity that supports one or more public charities.
-      
       Tax Code: Section 509(a)(3)
-      
-      Characteristics:
-      - Funding Sources: Usually aligned with the supported public charity.
-      - Relationship: Must be operated, supervised, or controlled by, in connection with, or operate for the benefit of the supported organization.
-      - Activities: Supports and benefits the public charity.
-      - Board of Directors: Often involves representatives from the supported organization.
-      - Tax Benefits: Contributions deductible as with public charities.
-      - Regulation: Specific rules ensuring the support and benefit relationship.
-      
-      Examples:
-      - The Annie E. Casey Foundation (supporting organizations)
-      - The Ford Foundation (supporting organizations)
-      
       Impact on Pharmaceuticals: Supporting organizations can channel resources efficiently towards public health goals, ensuring alignment with bioethical standards. However, their dependence on the parent charity may limit their operational scope and innovation capacity.
+      Examples: The Annie E. Casey Foundation, The Ford Foundation
+      Characteristics: Funding Sources - Usually aligned with the supported public charity ∙ Activities - Supports and benefits the public charity ∙ Board of Directors - Often involves representatives from the supported organization ∙ Tax Benefits - Contributions deductible as with public charities ∙ Regulation - Specific rules ensuring the support and benefit relationship.
     `
   },
   {
@@ -130,21 +65,9 @@ const osItems = [
     title: 'Publicly Traded Corporation',
     content: `
       Definition: A for-profit company whose shares are traded openly on stock exchanges.
-      
-      Characteristics:
-      - Ownership: Shareholders who invest in the company's stock.
-      - Funding Sources: Capital from stock sales and investments.
-      - Activities: Operate to maximize profits for shareholders.
-      - Board of Directors: Elected by shareholders, focused on maximizing shareholder value.
-      - Tax Benefits: Eligible for various business tax deductions.
-      - Regulation: Governed by securities regulations and stock exchange rules.
-      
-      Examples:
-      - Pfizer
-      - Johnson & Johnson
-      - Merck
-      
       Impact on Pharmaceuticals: Publicly traded corporations drive innovation and large-scale R&D through significant financial resources and competitive dynamics. However, the focus on profit margins may sometimes conflict with broader public health goals.
+      Examples: Pfizer, Johnson & Johnson, Merck
+      Characteristics: Ownership - Shareholders who invest in the company's stock ∙ Funding Sources - Capital from stock sales and investments ∙ Activities - Operate to maximize profits for shareholders ∙ Board of Directors - Elected by shareholders, focused on maximizing shareholder value ∙ Tax Benefits - Eligible for various business tax deductions ∙ Regulation - Governed by securities regulations and stock exchange rules.
     `
   },
   {
@@ -152,21 +75,9 @@ const osItems = [
     title: 'Private Corporation',
     content: `
       Definition: A for-profit company privately owned and not traded on public stock exchanges.
-      
-      Characteristics:
-      - Ownership: Typically owned by founders, families, or a small group of investors.
-      - Funding Sources: Private investments, retained earnings.
-      - Activities: Operate to generate profits for owners.
-      - Board of Directors: Appointed by owners, more flexibility in decision-making.
-      - Tax Benefits: Eligible for various business tax deductions.
-      - Regulation: Fewer public reporting requirements compared to publicly traded corporations.
-      
-      Examples:
-      - Cargill
-      - Koch Industries
-      - Mars, Inc.
-      
       Impact on Pharmaceuticals: Private corporations can focus on long-term projects without the pressure of quarterly earnings reports. This can foster innovative approaches but may lack the transparency and capital access of publicly traded companies.
+      Examples: Cargill, Koch Industries, Mars, Inc.
+      Characteristics: Ownership - Typically owned by founders, families, or a small group of investors ∙ Funding Sources - Private investments, retained earnings ∙ Activities - Operate to generate profits for owners ∙ Board of Directors - Appointed by owners, more flexibility in decision-making ∙ Tax Benefits - Eligible for various business tax deductions ∙ Regulation - Fewer public reporting requirements compared to publicly traded corporations.
     `
   },
   {
@@ -174,29 +85,26 @@ const osItems = [
     title: 'Benefit Corporation (B Corp)',
     content: `
       Definition: A type of for-profit corporate entity that includes positive impact on society, workers, the community, and the environment in addition to profit as its legally defined goals.
-      
-      Characteristics:
-      - Ownership: Shareholders who are committed to both profit and social/environmental impact.
-      - Funding Sources: Investments from socially responsible investors.
-      - Activities: Operate with a dual focus on profit and mission-driven goals.
-      - Board of Directors: Ensures the company adheres to its social/environmental mission.
-      - Tax Benefits: Standard corporate tax deductions.
-      - Regulation: Must meet certain standards of social and environmental performance, accountability, and transparency.
-      
-      Examples:
-      - Patagonia
-      - Ben & Jerry's
-      - Warby Parker
-      
       Impact on Pharmaceuticals: Benefit corporations can balance innovation with ethical considerations, focusing on mission-driven goals alongside profitability. They may face challenges in scaling compared to traditional for-profit entities but offer a sustainable model for ethical innovation.
+      Examples: Patagonia, Ben & Jerry's, Warby Parker
+      Characteristics: Ownership - Shareholders who are committed to both profit and social/environmental impact ∙ Funding Sources - Investments from socially responsible investors ∙ Tax Benefits - Standard corporate tax deductions ∙ Regulation - Must meet certain standards of social and environmental performance, accountability, and transparency.
     `
   }
 ];
 
-
 const finItems: TimelineItemProps[] = [
-  { id: 1, title: 'Institutional Investment', content: 'Few institutional investment firms own large portions of many of the largest pharma companies.' },
-  { id: 2, title: 'Physicians Against Corporate Pharma', content: 'Many doctors believe that pharma’s corporate ownership worsens the patient care system.' },
+  { id: 1, title: 'Institutional Investment', content: `
+Overview: Few investment firms own large stakes in many biotech/pharma companies
+Source: 
+` },
+  { id: 2, title: 'Physicians Against Corporate Pharma', content: `
+Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
+Source: 
+` },
+{ id: 2, title: 'Sample', content: `
+Overview: Blah blah blah.
+Source: 
+` },
 ];
 
 const Home: React.FC = () => {
@@ -204,13 +112,17 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
-          <h1 className="mb-4 text-4xl font-bold ml-4">How Corporate Ownership Shapes Big Pharma</h1>
+          <h1 className="mb-4 text-4xl font-bold ml-4">How Corporate Ownership Shapes the Biotech and Pharma Industries</h1>
           <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
           <p className="text-lg ml-4 mb-4">
-          Considering the importance of pharmaceuticals to the mass market, who should be in charge? Should it be private non-profit foundations to ensure the fulfillment of public interests, or publicly traded corporations to maximize drug innovation and profit margins?
-          </p>
-          <br></br>
-          <p className='text-lg ml-4 mb-4'>To gauge your perspective, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the pharmaceutical and biotechnology industries.
+  Considering the importance of biologics and pharmaceuticals to the mass market:
+</p>
+<ul className="list-disc list-inside ml-8 mb-4">
+  <li>Who should be in charge? Should it be non-profits to ensure public interests, or publicly traded corporations to maximize innovation and profits?</li>
+  <li>Should marketing expenses be as strictly regulated as drug discovery and R&D?</li>
+  <li>In the age of AI, should there be more public oversight and transparency in the process?</li>
+</ul>
+          <p className='text-lg ml-4 mb-4'>To see where you stand on these nuanced issues, answer the survey without additional information. Next, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the biotechnology and pharmaceutical industries.
           </p>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Ownership Structures</h1>
         <div className="timeline-container">
@@ -229,8 +141,12 @@ const Home: React.FC = () => {
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Studies</h1>
-        <p className="mb-4 ml-4">The Lilly Endowment (offshoot of Eli Lilly) and how they operate to see how the landscape has changed throughout time while supporting it with data:
-      </p>
+<p className="mb-4 ml-4">
+  The Lilly Endowment (offshoot of Eli Lilly) and how they operate to see how the landscape has changed throughout time while supporting it with data:
+</p>
+<p className="mb-4 ml-4">
+  Comparing Eli Lilly and Novo Nordisk highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
+</p>
       </main>
     </div>
   );
