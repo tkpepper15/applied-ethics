@@ -107,6 +107,21 @@ Source:
 ` },
 ];
 
+const sentItems: TimelineItemProps[] = [
+  { id: 2, title: 'Physicians Against Corporate Pharma', content: `
+Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
+Source: 
+` },
+  { id: 2, title: 'Physicians Against Corporate Pharma', content: `
+Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
+Source: 
+` },
+{ id: 2, title: 'Physicians Against Corporate Pharma', content: `
+Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
+Source: 
+` },
+];
+
 const Home: React.FC = () => {
   return (
     <div className="home-container">
@@ -140,7 +155,15 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Studies</h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Expert Sentiments</h1>
+        <div className="timeline-container">
+          <div id="timeline" className="timeline flex">
+            {sentItems.map(item => (
+              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} />
+            ))}
+          </div>
+        </div>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
 <p className="mb-4 ml-4">
   The Lilly Endowment (offshoot of Eli Lilly) and how they operate to see how the landscape has changed throughout time while supporting it with data:
 </p>
