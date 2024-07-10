@@ -11,9 +11,9 @@ const Home: React.FC = () => {
         <section className="text-center max-w-4xl mx-auto mb-8">
           <h1 className="mb-4 text-4xl font-bold">Welcome!</h1>
           <p className="text-lg">
-          This site (in progress) is for surveys that assess the public&apos;s perception of ethical dilemmas. By providing the respondent with background information and objective material—biases can be reduced.
-          Built by Tejjas Kaul.
-          </p>
+                This site aims to raise awareness of ethical issues and assess the public&apos;s current understanding. It includes surveys that provide background information and objective material to help reduce biases.
+                Built by <a className="hover:text-green-500" href="https://www.linkedin.com/in/tejjas-kaul-36091a22b/" target="_blank" rel="noopener noreferrer">Tejjas Kaul</a>.
+            </p>
           <br></br>
           <p>
           Here is the most recent survey:
