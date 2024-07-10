@@ -112,18 +112,18 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
-          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries</h1>
+          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Innovation, Ethics, and Public Health</h1>
           <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
-          <p className="text-lg ml-4 mb-4">
-  Considering the importance of biologics and pharmaceuticals to the mass market:
+          <p className='text-lg ml-4 mb-4'>To see where you stand on the following nuanced issues, answer the survey without additional information. Next, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the biotechnology and pharmaceutical industries to gauge the landscape.
+          </p>
+<p className="text-lg ml-4 mb-4">
+  Consider the importance of biologics and pharmaceuticals to the mass market while answering:
 </p>
 <ul className="list-disc list-inside ml-8 mb-4">
   <li>Who should be in charge? Should it be non-profits to ensure public interests, or publicly traded corporations to maximize innovation and profits?</li>
   <li>Should marketing expenses be as strictly regulated as drug discovery and R&D?</li>
   <li>In the age of AI, should there be more public oversight and transparency in the process?</li>
 </ul>
-          <p className='text-lg ml-4 mb-4'>To see where you stand on these nuanced issues, answer the survey without additional information. Next, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the biotechnology and pharmaceutical industries.
-          </p>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Ownership Structures</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
