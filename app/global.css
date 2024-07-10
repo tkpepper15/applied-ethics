@@ -39,7 +39,7 @@ body {
   justify-content: start;
   align-items: start;
   min-height: 100vh;
-  padding: 10% 1rem; /* Adjust padding for better centering and spacing */
+  padding: 5% 1rem; /* Adjust padding for better centering and spacing */
 }
 
 /* Typography */
@@ -55,7 +55,7 @@ body {
 }
 
 .text-center {
-  text-align: center;
+  text-align: start;
 }
 
 /* Buttons and Links */
@@ -107,15 +107,15 @@ body {
   flex-wrap: nowrap;
   maxwidth: 100%;
   text-wrap: wrap;
-  padding: 0 10px;
+  padding: 5px;
 }
 
 .timeline-item {
   flex: 0 0 auto;
-  padding: 10px;
+  padding: 15px;
   background-color: #f0f0f0; /* Light background for timeline items */
   margin-right: 10px;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -126,7 +126,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
-    max-width: 90%; /* Adjust container width for smaller screens */
+    max-width: 100%; /* Adjust container width for smaller screens */
     padding: 0 0.5rem; /* Example adjustment for smaller screens */
   }
 
@@ -137,7 +137,7 @@ body {
 
   .home-container {
     padding-top: 15%; /* Example adjustment for smaller screens */
-    padding: 10% 0.5rem; /* Example adjustment for smaller screens */
+    padding: 5% 0.5rem; /* Example adjustment for smaller screens */
   }
 
   .text {

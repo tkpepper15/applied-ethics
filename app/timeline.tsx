@@ -25,9 +25,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ id, title, content }) => {
   return (
     <div
       className={`timeline-item ${isHovered ? 'bg-gray-200' : 'bg-gray-100'} p-4 rounded-lg shadow-md cursor-pointer`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
     >
       <div className="timeline-content">
         <h2 className="text-lg font-semibold">{title}</h2>
