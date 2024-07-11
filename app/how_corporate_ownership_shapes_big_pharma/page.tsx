@@ -98,7 +98,7 @@ Tejjas Kaul
   <li>Nonprofits, NGOs, and SROs</li>
   <li>Companies in Regulatory Roles</li>
 </ul>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators<sup>1</sup></h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {osItems.map(item => (
@@ -106,7 +106,7 @@ Tejjas Kaul
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights</h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights<sup>2</sup><sup>,</sup><sup>3</sup></h1>
         <div className="img-container">   
 </div>
         <div className="timeline-container">
@@ -136,6 +136,14 @@ Post-Survey: After reviewing this material, who should steer these industries?
   <li>Nonprofits, NGOs, and SROs</li>
   <li>Companies in Regulatory Roles</li>
 </ul>
+<h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Sources</h1>
+<p className="text-lg ml-4 mb-4">
+1:
+<br></br>
+2:
+<br></br>
+3:
+</p>
       </main>
     </div>
   );
