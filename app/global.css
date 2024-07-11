@@ -11,7 +11,8 @@
 body {
   background-color: #f9f9f9; /* Light mode background color */
   margin: 0;
-  padding: 4rem 1rem 0; /* Adjust padding-top and right as needed */
+  padding-top: 4rem; /* Adjust as needed */
+  padding-right: 10px;
   color: #333; /* Dark text color */
   font-family: Arial, sans-serif; /* Update with your preferred font stack */
 }
@@ -19,31 +20,28 @@ body {
 /* Navbar */
 .fixed-nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   z-index: 10;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff; /* Navbar background color */
+  width: 100%; /* Full width for fixed navbar */
 }
 
 /* Layout */
 .container {
-  max-width: 100%; /* Adjust as per design */
+  max-width: 100px; /* Set a max-width to constrain the site */
   margin: 0 auto;
-  padding: 0 1rem; /* Adjust padding as per design */
 }
 
 /* Home Container */
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: start;
+  align-items: start;
   min-height: 100vh;
   max-width: 900px; /* Set a max-width to constrain the site */
   margin: 0 auto;
-  padding: 5% 1rem; /* Adjust padding as per design */
 }
 
 /* Typography */
@@ -59,7 +57,7 @@ body {
 }
 
 .text-center {
-  text-align: center;
+  text-align: start;
 }
 
 /* Buttons and Links */
@@ -102,15 +100,15 @@ body {
   margin-top: 5px;
   overflow-x: auto;
   display: flex;
-  justify-content: flex-start;
-  padding: 0;
+  justify-content: start;
+  padding: 0 0.5rem;
 }
 
 .timeline {
   display: flex;
   overflow: auto;
   flex-wrap: nowrap;
-  width: 100%; /* Make the timeline stretch edge-to-edge */
+  max-width: 100%;
   padding: 5px;
 }
 
@@ -122,9 +120,13 @@ body {
   margin-right: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 100%; /* Ensure items also stretch edge-to-edge */
 }
 
+.timeline-content {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
 
 .img-container {
   max-width: 100%;
@@ -135,13 +137,19 @@ body {
   height: auto;
 }
 
+.text-content {
+  flex: 1;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .container {
+    max-width: 100%;
     padding: 0 0.5rem;
   }
 
   .timeline-container {
+    max-width: 100%;
     padding: 0 0.5rem;
   }
 
@@ -150,8 +158,8 @@ body {
   }
 
   .home-container {
-    padding-top: 15%; /* Adjust as per design */
-    padding: 5% 0.5rem; /* Adjust padding as per design */
+    padding-top: 15%;
+    padding: 5% 0.5rem;
   }
 
   .text {
@@ -179,6 +187,6 @@ body {
   }
 
   .home-container {
-    padding-top: 20px; /* Adjust as per design */
+    padding-top: 20px;
   }
 }
