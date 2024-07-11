@@ -155,7 +155,7 @@ body {
   }
 
   .timeline-item {
-    width: 100%;
+    width: 80%;
   }
 
   .home-container {
@@ -185,5 +185,9 @@ body {
   .timeline-content {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .home-container {
+    padding-top: 20px;
   }
 }
