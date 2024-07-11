@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import Navbar from '../navbar'; // Ensure the path is correct
 import TimelineItem, { TimelineItemProps } from '../timeline'; // Ensure the path is correct
@@ -30,7 +29,6 @@ const osItems: TimelineItemProps[] = [
     `
   }
 ];
-
 
 const finItems: TimelineItemProps[] = [
   { 
