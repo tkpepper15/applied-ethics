@@ -18,7 +18,7 @@ const osItems: TimelineItemProps[] = [
     title: 'Nonprofits, NGOs, and SROs',
     content: `
       Definition: Organizations that regulate industries, whether through governmental influence, public interest, ethical considerations, or self-regulation via standards, codes of conduct, or industry associations.
-      Examples: International Organization for Standardization (ISO), The Nature Conservancy, Amnesty International, Financial Industry Regulatory Authority (FINRA), Pharmaceutical Research and Manufacturers of America (PhRMA), International Chamber of Commerce (ICC)
+      Examples: International Organization for Standardization (ISO), The Nature Conservancy, Amnesty International
     `
   },
   {
