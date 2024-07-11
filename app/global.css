@@ -12,6 +12,7 @@ body {
   background-color: #f9f9f9; /* Light mode background color */
   margin: 0;
   padding-top: 4rem; /* Adjust as needed */
+  padding-right: 5px;
   color: #333; /* Dark text color */
   font-family: Arial, sans-serif; /* Update with your preferred font stack */
 }
@@ -30,7 +31,6 @@ body {
 .container {
   max-width: 100px; /* Set a max-width to constrain the site */
   margin: 0 auto;
-  padding: 0 1rem; /* Add padding to prevent content from touching edges */
 }
 
 /* Home Container */
@@ -42,7 +42,6 @@ body {
   min-height: 100vh;
   max-width: 900px; /* Set a max-width to constrain the site */
   margin: 0 auto;
-  padding: 0 1rem; /* Add padding to prevent content from touching edges */
 }
 
 /* Typography */
