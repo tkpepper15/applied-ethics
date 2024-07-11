@@ -37,25 +37,22 @@ const finItems: TimelineItemProps[] = [
     id: 1, 
     title: 'Institutional Investment', 
     content: `
-      Overview: Few investment firms own large stakes in many biotech/pharma companies
-      Source: Your source here
+    Overview: Few investment firms own large stakes in many biotech/pharma companies
     `,
     imageUrl: '/investment_firms.png'
   },
   { 
     id: 2, 
-    title: 'Institutional Investment', 
+    title: 'Test', 
     content: `
-      Overview: Few investment firms own large stakes in many biotech/pharma companies
-      Source: 
+      Overview: Test
     `
   },
   { 
     id: 3, 
-    title: 'Institutional Investment', 
+    title: 'Test', 
     content: `
-      Overview: Few investment firms own large stakes in many biotech/pharma companies
-      Source: 
+      Overview: Test
     `
   },
 ];
@@ -63,15 +60,12 @@ const finItems: TimelineItemProps[] = [
 const sentItems: TimelineItemProps[] = [
   { id: 2, title: 'Physicians Against Corporate Pharma', content: `
 Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
-Source: 
 ` },
-  { id: 2, title: 'Physicians Against Corporate Pharma', content: `
-Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
-Source: 
+  { id: 2, title: 'Test', content: `
+Overview: Test
 ` },
-{ id: 2, title: 'Physicians Against Corporate Pharma', content: `
-Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
-Source: 
+{ id: 2, title: 'Test', content: `
+Overview: Test
 ` },
 ];
 
@@ -88,42 +82,37 @@ Tejjas Kaul
 <img
   src="/ncssm.png"
   alt="ncssm"
-  className="max-w-full h-auto sm:max-w-md lg:max-w-lg"
+  className="max-w-full h-auto sm:max-w-md lg:max-w-l pl-5"
 />
-<br></br>
 </div>
+<br></br>
           <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
           <p className='text-lg ml-4 mb-4'>
-  To understand your position on these complex issues, take the survey without any extra details. Then, explore how ownership structures, bioethics, and financial dynamics influence the biotech and pharmaceutical industries to get a clearer picture of the landscape.
+  To understand your position on this complex issue, take the survey without any additional insights. Then, explore how ownership structures, bioethics, and financial dynamics influence the biotech and pharmaceutical industries to get a clearer picture of the landscape.
 </p>
 <p className="text-lg ml-4 mb-4">
-  Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer the industry?
+  Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
 </p>
 <ul className="list-disc list-inside ml-8 mb-4">
   <li>Government Bodies</li>
   <li>Nonprofits, NGOs, and SROs</li>
   <li>Companies in Regulatory Roles</li>
 </ul>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Ownership Structures</h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {osItems.map(item => (
-              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} />
+              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl}/>
             ))}
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights</h1>
         <div className="img-container">   
-        <img
-  src="/investment_firms.png"
-  alt="investment firms"
-  className="max-w-full h-auto sm:max-w-md lg:max-w-lg"
-/>
 </div>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {finItems.map(item => (
-              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} />
+               <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl}/>
             ))}
           </div>
         </div>
@@ -140,7 +129,7 @@ Tejjas Kaul
   Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
 </p>
 <p className="text-lg ml-4 mb-4">
-Post-Survey: After reviewing this material, who should steer the industry?
+Post-Survey: After reviewing this material, who should steer these industries?
 </p>
 <ul className="list-disc list-inside ml-8 mb-4">
 <li>Government Bodies</li>
