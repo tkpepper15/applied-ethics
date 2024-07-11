@@ -130,11 +130,11 @@ body {
 }
 
 .img-container {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .img-container img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 /* Responsive Adjustments */
-
+@media (max-width: 768px) {
   .container {
     max-width: 100%;
     padding: 0 0.5rem;
@@ -152,6 +152,10 @@ body {
   .timeline-container {
     max-width: 100%;
     padding: 0 0.5rem;
+  }
+
+  .timeline-item {
+    width: 100%;
   }
 
   .home-container {
@@ -170,9 +174,16 @@ body {
 
   .img-container {
     max-width: 100%;
-    margin-bottom: 1rem;
   }
 
   .img-container img {
     max-width: 100%;
   }
+}
+
+@media (min-width: 769px) {
+  .timeline-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
