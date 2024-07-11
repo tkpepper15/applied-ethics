@@ -85,12 +85,16 @@ const Home: React.FC = () => {
           />
         </div>
         <br />
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
+        <p className="text-lg ml-4 mb-4">
+          This study explores how ownership structures shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, nonprofits, NGOs, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits.
+        </p>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
         <p className="text-lg ml-4 mb-4">
-          To understand your position on this complex issue, take the survey without any additional insights. Then, explore how ownership structures, bioethics, and financial dynamics influence the biotech and pharmaceutical industries to get a clearer picture of the landscape.
+          To understand your position on this complex issue, take the survey without any additional insights. Then, explore a meta analysis of ownership structures, bioethics, and financial dynamics that influence the biotech and pharmaceutical industries to get a clearer picture.
         </p>
         <p className="text-lg ml-4 mb-4">
-          Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
+        [Google Form Embed] Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
         </p>
         <ul className="list-disc list-inside ml-8 mb-4">
           <li>Government Bodies</li>
@@ -126,14 +130,14 @@ const Home: React.FC = () => {
           Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
         </p>
         <p className="text-lg ml-4 mb-4">
-          Post-Survey: After reviewing this material, who should steer these industries?
+          [Google Form Embed] Post-Survey: After reviewing this material, who should steer these industries?
         </p>
         <ul className="list-disc list-inside ml-8 mb-4">
           <li>Government Bodies</li>
           <li>Nonprofits, NGOs, and SROs</li>
           <li>Companies in Regulatory Roles</li>
         </ul>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Sources</h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
         <p className="text-lg ml-4 mb-4">
           1:
           <br />
