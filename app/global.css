@@ -178,6 +178,10 @@ body {
   .img-container img {
     max-width: 100%;
   }
+
+  body {
+    padding-right: 10px; /* Adjust as needed */
+  }
 }
 
 @media (min-width: 769px) {

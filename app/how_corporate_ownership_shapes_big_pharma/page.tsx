@@ -74,45 +74,42 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
-          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
-          <p className="text-sm ml-4 mb-6">
-Tejjas Kaul
-</p>
-<div className="img-container">         
-<img
-  src="/ncssm.png"
-  alt="ncssm"
-  className="max-w-full h-auto sm:max-w-md lg:max-w-l pl-5"
-/>
-</div>
-<br></br>
-          <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
-          <p className='text-lg ml-4 mb-4'>
-  To understand your position on this complex issue, take the survey without any additional insights. Then, explore how ownership structures, bioethics, and financial dynamics influence the biotech and pharmaceutical industries to get a clearer picture of the landscape.
-</p>
-<p className="text-lg ml-4 mb-4">
-  Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
-</p>
-<ul className="list-disc list-inside ml-8 mb-4">
-  <li>Government Bodies</li>
-  <li>Nonprofits, NGOs, and SROs</li>
-  <li>Companies in Regulatory Roles</li>
-</ul>
+        <meta name="viewport" content="width=device-width" />
+        <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
+        <p className="text-sm ml-4 mb-6">Tejjas Kaul</p>
+        <div className="img-container">         
+          <img
+            src="/ncssm.png"
+            alt="ncssm"
+            className="max-w-full h-auto sm:max-w-md lg:max-w-l pl-5"
+          />
+        </div>
+        <br />
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
+        <p className="text-lg ml-4 mb-4">
+          To understand your position on this complex issue, take the survey without any additional insights. Then, explore how ownership structures, bioethics, and financial dynamics influence the biotech and pharmaceutical industries to get a clearer picture of the landscape.
+        </p>
+        <p className="text-lg ml-4 mb-4">
+          Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
+        </p>
+        <ul className="list-disc list-inside ml-8 mb-4">
+          <li>Government Bodies</li>
+          <li>Nonprofits, NGOs, and SROs</li>
+          <li>Companies in Regulatory Roles</li>
+        </ul>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators<sup>1</sup></h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {osItems.map(item => (
-              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl}/>
+              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl} />
             ))}
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights<sup>2</sup><sup>,</sup><sup>3</sup></h1>
-        <div className="img-container">   
-</div>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {finItems.map(item => (
-               <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl}/>
+              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl} />
             ))}
           </div>
         </div>
@@ -125,25 +122,26 @@ Tejjas Kaul
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
-<p className="mb-4 ml-4">
-  Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
-</p>
-<p className="text-lg ml-4 mb-4">
-Post-Survey: After reviewing this material, who should steer these industries?
-</p>
-<ul className="list-disc list-inside ml-8 mb-4">
-<li>Government Bodies</li>
-  <li>Nonprofits, NGOs, and SROs</li>
-  <li>Companies in Regulatory Roles</li>
-</ul>
-<h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Sources</h1>
-<p className="text-lg ml-4 mb-4">
-1:
-<br></br>
-2:
-<br></br>
-3:
-</p>
+        <p className="mb-4 ml-4">
+          Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
+        </p>
+        <p className="text-lg ml-4 mb-4">
+          Post-Survey: After reviewing this material, who should steer these industries?
+        </p>
+        <ul className="list-disc list-inside ml-8 mb-4">
+          <li>Government Bodies</li>
+          <li>Nonprofits, NGOs, and SROs</li>
+          <li>Companies in Regulatory Roles</li>
+        </ul>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Sources</h1>
+        <p className="text-lg ml-4 mb-4">
+          1:
+          <br />
+          2:
+          <br />
+          3:
+          <br />
+        </p>
       </main>
     </div>
   );
