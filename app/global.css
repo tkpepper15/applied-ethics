@@ -153,21 +153,14 @@ body {
 }
 
 .img-container img {
-  max-width: 60%;
+  max-width: 50%;
   height: auto;
   padding: 0 0.5rem;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 768px) {
   .img-container img {
-    max-width: 10rem; /* Adjust as needed for small screens */
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .img-container img {
-    max-width: 20rem; /* Adjust as needed for large screens */
+    max-width: 15rem; /* Adjust as needed for small screens */
     padding: 0 0.5rem;
   }
 }

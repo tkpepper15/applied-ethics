@@ -1,39 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export interface TimelineItemProps {
   id: number;
   title: string;
   content: string;
+  imageUrl?: string; // New property for image URL
 }
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ id, title, content }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
+const TimelineItem: React.FC<TimelineItemProps> = ({ id, title, content, imageUrl }) => {
   // Parse content into structured parts
   const contentParts = content.split('\n').filter(part => part.trim() !== '');
 
   return (
-    <div
-      className={`timeline-item ${isHovered ? 'bg-gray-200' : 'bg-gray-100'} p-4 rounded-lg shadow-md`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div className="timeline-item bg-gray-200 p-4 rounded-lg shadow-md">
       <div className="timeline-content">
         <h2 className="text-lg font-semibold mb-2">{title}</h2>
+        {imageUrl && ( // Render image if imageUrl is provided
+          <div className="img-container mb-1">
+            <img src={imageUrl} alt={title} className="max-w-full h-auto sm:max-w-md lg:max-w-lg" />
+          </div>
+        )}
         {contentParts.map((part, index) => {
-          if (part.startsWith('<img')) {
-            return (
-              <div key={index} className="mb-1" dangerouslySetInnerHTML={{ __html: part }}></div>
-            );
-          }
+          // Split content into heading and text
           const [heading = '', text = ''] = part.split(':', 2);
           if (heading.trim()) {
             return (
