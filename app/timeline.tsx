@@ -29,6 +29,11 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ id, title, content }) => {
       <div className="timeline-content">
         <h2 className="text-lg font-semibold mb-2">{title}</h2>
         {contentParts.map((part, index) => {
+          if (part.startsWith('<img')) {
+            return (
+              <div key={index} className="mb-1" dangerouslySetInnerHTML={{ __html: part }}></div>
+            );
+          }
           const [heading = '', text = ''] = part.split(':', 2);
           if (heading.trim()) {
             return (

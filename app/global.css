@@ -116,7 +116,7 @@ body {
   padding: 15px;
   background-color: #f0f0f0; /* Light background for timeline items */
   margin-right: 10px;
-  border-radius: 0px;
+  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -143,5 +143,31 @@ body {
 
   .text {
     font-size: 16px; /* Example font size adjustment */
+  }
+}
+
+/* CSS */
+.img-container {
+  max-width: 60%;
+  padding: 0 0.5rem;
+}
+
+.img-container img {
+  max-width: 60%;
+  height: auto;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .img-container img {
+    max-width: 10rem; /* Adjust as needed for small screens */
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-container img {
+    max-width: 20rem; /* Adjust as needed for large screens */
+    padding: 0 0.5rem;
   }
 }

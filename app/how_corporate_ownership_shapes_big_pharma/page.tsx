@@ -93,9 +93,9 @@ const osItems = [
 ];
 
 const finItems: TimelineItemProps[] = [
-  { id: 1, title: 'Institutional Investment', content: `
+{ id: 1, title: 'Institutional Investment', content: `
 Overview: Few investment firms own large stakes in many biotech/pharma companies
-Source: 
+Source: Your source here
 ` },
 { id: 2, title: 'Institutional Investment', content: `
 Overview: Few investment firms own large stakes in many biotech/pharma companies
@@ -109,6 +109,11 @@ Source:
 
 const sentItems: TimelineItemProps[] = [
   { id: 2, title: 'Physicians Against Corporate Pharma', content: `
+  <img
+  src="/investment_firms.png"
+  alt="investment firms"
+  className="max-w-full h-auto sm:max-w-md lg:max-w-lg"
+/>
 Overview: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
 Source: 
 ` },
@@ -127,17 +132,28 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
-          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Innovation, Ethics, and Public Health</h1>
+          <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
+          <p className="text-sm ml-4 mb-6">
+Tejjas Kaul
+</p>
+<div className="img-container">         
+<img
+  src="/ncssm.png"
+  alt="ncssm"
+  className="max-w-full h-auto sm:max-w-md lg:max-w-lg"
+/>
+<br></br>
+</div>
           <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
           <p className='text-lg ml-4 mb-4'>To see where you stand on the following nuanced issues, answer the survey without additional information. Next, explore the impact of ownership structures alongside bioethics, mission-driven innovation, and financial dynamics on the biotechnology and pharmaceutical industries to gauge the landscape.
           </p>
 <p className="text-lg ml-4 mb-4">
-  Consider the importance of biologics and pharmaceuticals to the mass market while answering:
+  Considering the importance of biologics and pharmaceuticals to the mass market, who should be in charge?
 </p>
 <ul className="list-disc list-inside ml-8 mb-4">
-  <li>Who should be in charge? Should it be non-profits to ensure public interests, or publicly traded corporations to maximize innovation and profits?</li>
-  <li>Should marketing expenses be as strictly regulated as drug discovery and R&D?</li>
-  <li>In the age of AI, should there be more public oversight and transparency in the process?</li>
+  <li>public/private non-profits</li>
+  <li>publicly traded/private corporations</li>
+  <li>government/external regulatory bodies</li>
 </ul>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Ownership Structures</h1>
         <div className="timeline-container">
@@ -165,8 +181,16 @@ const Home: React.FC = () => {
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
 <p className="mb-4 ml-4">
-  Comparing Eli Lilly and Novo Nordisk highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
+  Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
 </p>
+<p className="text-lg ml-4 mb-4">
+  After reviewing this material, who should be in charge?
+</p>
+<ul className="list-disc list-inside ml-8 mb-4">
+  <li>public/private non-profits</li>
+  <li>publicly traded/private corporations</li>
+  <li>government/external regulatory bodies</li>
+</ul>
       </main>
     </div>
   );
