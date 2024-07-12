@@ -35,8 +35,10 @@ const finItems: TimelineItemProps[] = [
     id: 1, 
     title: 'State Backing', 
     content: `
-    Bayh-Dole Act of 1980: Established a uniform patent policy for federal research funding agencies, allowing universities to retain ownership of inventions from federally funded research.
-    Impact: The rate of funding from the NIH increased at an average annual rate of 2.9% until the mid-2000s, when it exceeded half of non-defense public R&D [3][4]. By then, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [5]. Vallas et al. (2011) estimate that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages [6].
+    Bayh-Dole Act of 1980: Established a uniform patent policy for federal research funding agencies, allowing universities, small businesses, and nonprofits to retain ownership of inventions from federally funded research.
+    • The rate of funding from the NIH increased at an average annual rate of 2.9% until the mid-2000s, when it exceeded half of non-defense public R&D [3][4]. 
+    • By 2000, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [5]. 
+    • Vallas et al. (2011) estimated that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages [6].
     `
   },
   { 
