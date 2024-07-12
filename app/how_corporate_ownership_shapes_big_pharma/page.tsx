@@ -82,12 +82,12 @@ const Home: React.FC = () => {
         <meta name="viewport" content="width=device-width" />
         <h1 className="mb-4 text-4xl font-bold ml-4">How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
         <p className="text-sm ml-4 mb-6">Tejjas Kaul</p>
-        <div className="img-container">         
+        <div className="pl-4">         
           <img
-            src="/ncssm.png"
-            alt="ncssm"
-            className="max-w-full h-auto sm:max-w-md lg:max-w-l pl-5"
-          />
+            src="/schools.png"
+            alt="schools"
+            width="250px"
+          ></img>
         </div>
         <br />
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>

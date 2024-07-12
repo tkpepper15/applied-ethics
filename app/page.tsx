@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           Here is the most recent survey:
           </p>
         <a className="mb-4 ml-4 custom-link" href="/how_corporate_ownership_shapes_big_pharma">
-        How Ownership Shapes the Biotech and Pharma Industries
+        How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health
         </a>
         </section>
       </main>
