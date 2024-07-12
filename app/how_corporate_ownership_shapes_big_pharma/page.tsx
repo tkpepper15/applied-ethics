@@ -94,26 +94,9 @@ const Home: React.FC = () => {
         <p className="text-lg ml-4 mb-4">
           This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed.
         </p>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
-        <p className="text-lg ml-4 mb-4">
-          To understand your position on this complex issue, take the survey without any additional insights. Then, explore a meta analysis of ownership structures, bioethics, and financial dynamics that influence the biotech and pharmaceutical industries to get a clearer picture.
-        </p>
-        <p className="text-lg ml-4 mb-4">
-        [Google Form Embed] Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
-        </p>
-        <ul className="list-disc list-inside ml-8 mb-4">
-          <li>Government Bodies</li>
-          <li>Nonprofits, NGOs, and SROs</li>
-          <li>Companies in Regulatory Roles</li>
-        </ul>
-        <p className="text-lg ml-4 mb-4">
-          [Google Form Embed] Post-Survey: After reviewing this material, who should steer these industries?
-        </p>
-        <ul className="list-disc list-inside ml-8 mb-4">
-          <li>Government Bodies</li>
-          <li>Nonprofits, NGOs, and SROs</li>
-          <li>Companies in Regulatory Roles</li>
-        </ul>
+        <div className="responsive-iframe-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7EGYHxssSrXEp5NHdg3zIz-eiSmYkJYwP4feLeuX920nrPw/viewform?embedded=true">Loading…</iframe>
+        </div>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
