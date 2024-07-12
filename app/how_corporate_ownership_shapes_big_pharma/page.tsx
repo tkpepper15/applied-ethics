@@ -17,18 +17,19 @@ const osItems: TimelineItemProps[] = [
     title: 'Nonprofits, NGOs, and SROs',
     content: `
       Definition: Organizations that regulate industries, whether through governmental influence, public interest, ethical considerations, or self-regulation via standards, codes of conduct, or industry associations.
-      Examples: International Organization for Standardization (ISO), The Nature Conservancy, Amnesty International
+      Examples: Bill and Melinda Gates Foundation (public health), Ford Foundation (social justice), New York Stock Exchange (finance)
     `
   },
   {
     id: 3,
     title: 'Companies in Regulatory Roles',
     content: `
-      Definition: Companies involved in regulatory roles within their industries, often through compliance with standards and legal requirements.
-      Examples: Ginkgo Bioworks (biotech), Shell (energy), Microsoft (technology)
+      Definition: Companies involved in regulatory roles within their industries, often through substantial market share and proprietary goods and services.
+      Examples: Ginkgo Bioworks (biotech), Shell (energy), Nvidia (AI technology)
     `
   }
 ];
+
 
 const finItems: TimelineItemProps[] = [
   { 
@@ -60,7 +61,7 @@ const finItems: TimelineItemProps[] = [
 
 const sentItems: TimelineItemProps[] = [
   { id: 2, title: 'Government Bodies', content: `
-Negative: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
+Negative: 
 Positive:
 ` },
   { id: 2, title: 'Nonprofits, NGOs, and SROs', content: `
@@ -68,7 +69,7 @@ Negative:
 Positive:
 ` },
 { id: 2, title: 'Companies in Regulatory Roles', content: `
-Negative:
+Negative: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
 Positive:
 ` },
 ];
@@ -79,7 +80,7 @@ const Home: React.FC = () => {
       <Navbar />
       <main className="home-content">
         <meta name="viewport" content="width=device-width" />
-        <h1 className="mb-4 text-4xl font-bold ml-4">How Ownership Shapes the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
+        <h1 className="mb-4 text-4xl font-bold ml-4">How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
         <p className="text-sm ml-4 mb-6">Tejjas Kaul</p>
         <div className="img-container">         
           <img
@@ -91,7 +92,7 @@ const Home: React.FC = () => {
         <br />
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
         <p className="text-lg ml-4 mb-4">
-          This study explores how ownership structures shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, nonprofits, NGOs, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits.
+          This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed.
         </p>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Overview</h1>
         <p className="text-lg ml-4 mb-4">
@@ -99,6 +100,14 @@ const Home: React.FC = () => {
         </p>
         <p className="text-lg ml-4 mb-4">
         [Google Form Embed] Pre-Survey: Given the importance of biologics and pharmaceuticals to the mass market, who should steer these industries?
+        </p>
+        <ul className="list-disc list-inside ml-8 mb-4">
+          <li>Government Bodies</li>
+          <li>Nonprofits, NGOs, and SROs</li>
+          <li>Companies in Regulatory Roles</li>
+        </ul>
+        <p className="text-lg ml-4 mb-4">
+          [Google Form Embed] Post-Survey: After reviewing this material, who should steer these industries?
         </p>
         <ul className="list-disc list-inside ml-8 mb-4">
           <li>Government Bodies</li>
@@ -133,14 +142,6 @@ const Home: React.FC = () => {
         <p className="mb-4 ml-4">
           Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
         </p>
-        <p className="text-lg ml-4 mb-4">
-          [Google Form Embed] Post-Survey: After reviewing this material, who should steer these industries?
-        </p>
-        <ul className="list-disc list-inside ml-8 mb-4">
-          <li>Government Bodies</li>
-          <li>Nonprofits, NGOs, and SROs</li>
-          <li>Companies in Regulatory Roles</li>
-        </ul>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
         <p className="text-lg ml-4 mb-4">
 [4] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
