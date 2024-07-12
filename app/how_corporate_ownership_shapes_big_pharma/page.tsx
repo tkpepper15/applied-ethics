@@ -74,7 +74,7 @@ Positive:
 ` },
 ];
 
-const Home: React.FC = () => {
+const Main: React.FC = () => {
   return (
     <div className="home-container">
       <Navbar />
@@ -91,9 +91,11 @@ const Home: React.FC = () => {
         </div>
         <br />
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
+        <div className="pr-4">         
         <p className="text-lg ml-4 mb-4">
           This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts.
         </p>
+        </div>
         <div className="responsive-iframe-container">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7EGYHxssSrXEp5NHdg3zIz-eiSmYkJYwP4feLeuX920nrPw/viewform?embedded=true">Loading…</iframe>
         </div>
@@ -123,10 +125,13 @@ const Home: React.FC = () => {
           </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
+        <div className="pr-4">    
         <p className="mb-4 ml-4">
           Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
         </p>
+        </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
+        <div className="pr-4">    
         <p className="text-lg ml-4 mb-4">
 [4] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
 <br></br>
@@ -135,9 +140,10 @@ const Home: React.FC = () => {
 [6] Vallas, Steven, Kleinman, Daniel and Biscotti, Dina. “Political Structures and the making of US Biotechnology” in State of Innovation: The U.S. Government&apos;s Role in Technology Development (2011). Paradigm Publishers.
 <br></br>
         </p>
+      </div>
       </main>
     </div>
   );
 };
 
-export default Home;
+export default Main;
