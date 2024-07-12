@@ -35,7 +35,8 @@ const finItems: TimelineItemProps[] = [
     id: 1, 
     title: 'State Backing', 
     content: `
-    Bayh-Dole Act of 1980: Through this legislation, the NIH was able to directly fund research dependent industries; the rate of funding subsequently increased at an average rate of 2.9% per year till the mid-2000s where it became more than half of non-defense public R&D [30][31]. By then, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [29]. This funding has been highly effective for the biotech industry—Vallas et al. (2011) estimate that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages.
+    Bayh-Dole Act of 1980: Established a uniform patent policy for federal research funding agencies, allowing universities to retain ownership of inventions from federally funded research.
+    Impact: The rate of funding from the NIH increased at an average rate of 2.9% per year till the mid-2000s where it became more than half of non-defense public R&D [3][4]. By then, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [5]. Vallas et al. (2011) estimate that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages [6].
     `
   },
   { 
@@ -137,12 +138,14 @@ const Home: React.FC = () => {
         </ul>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
         <p className="text-lg ml-4 mb-4">
-          1:
-          <br />
-          2:
-          <br />
-          3:
-          <br />
+[3] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
+<br></br>
+[4] Vallas, Steven, Kleinman, Daniel and Biscotti, Dina. “Political Structures and the making of US Biotechnology” in State of Innovation: The U.S. Government's Role in Technology Development (2011). Paradigm Publishers.
+<br></br>
+[5] Lazonick, William, and Öner Tulum. “US biopharmaceutical finance and the sustainability of the biotech business model.” Research Policy 40.9 (2011): 1170-1187.
+<br></br>
+[6] Vallas, Steven, Kleinman, Daniel and Biscotti, Dina. “Political Structures and the making of US Biotechnology” in State of Innovation: The U.S. Government's Role in Technology Development (2011). Paradigm Publishers.
+<br></br>
         </p>
       </main>
     </div>
