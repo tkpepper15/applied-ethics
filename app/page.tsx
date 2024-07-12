@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           <h1 className="mb-4 ml-4 text-4xl font-bold">Welcome!</h1>
           <div className="pr-4">
           <p className="mb-4 ml-4 text-lg">
-            This site aims to raise awareness of ethical issues and assess the public's current understanding.
+            This site aims to raise awareness of ethical issues and assess the public&apos;s current understanding.
             <br></br>
             Built by <a className="hover:text-green-500" href="https://www.linkedin.com/in/tejjas-kaul-36091a22b/" target="_blank" rel="noopener noreferrer">Tejjas Kaul</a>.
           </p>
