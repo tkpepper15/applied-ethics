@@ -38,15 +38,17 @@ const Home: React.FC = () => {
           <h1 className="mb-4 ml-4 text-4xl font-bold">Welcome!</h1>
           <div className="pr-4">
           <p className="mb-4 ml-4 text-lg">
-            This site aims to raise awareness of ethical issues and assess the public&apos;s current understanding.
+            This site aims to assess the public&apos;s current understanding and raise awareness about ethical issues in industry.
+            <br></br>
             <br></br>
             Built by <a className="hover:text-green-500" href="https://www.linkedin.com/in/tejjas-kaul-36091a22b/" target="_blank" rel="noopener noreferrer">Tejjas Kaul</a>.
+            Made as part of the NCSSM SRIP and Duke Applied Ethics+ Summer Programs.
           </p>
           </div>
           <p className="mb-4 ml-4">
             Here is the most recent survey:
           </p>
-          <div className="pr-10">
+          <div className="pr-4">
           <a className="mb-4 ml-4 custom-link" href="/how_corporate_ownership_shapes_big_pharma">
             How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health
           </a>

@@ -84,7 +84,7 @@ const Main: React.FC = () => {
         <p className="text-sm ml-4 mb-6">Tejjas Kaul</p>
         <div className="pl-4">         
           <img
-            src="/schools.png"
+            src="./schools.png"
             alt="schools"
             width="250px"
           ></img>
@@ -93,7 +93,11 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
         <div className="pr-4">         
         <p className="text-lg ml-4 mb-4">
-          This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts.
+          This study explores how the different categories of entities each shape ethical practices and market dynamics in the biotech and pharmaceutical industries. 
+          It particularly examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. 
+          To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. 
+          The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts. 
+          The findings highlight the intricate relationship between the general public, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. 
         </p>
         </div>
         <div className="responsive-iframe-container">
@@ -131,7 +135,7 @@ const Main: React.FC = () => {
         </p>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
-        <div className="pr-4">    
+        <div className="reference-box">    
         <p className="text-lg ml-4 mb-4">
 [4] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
 <br></br>
