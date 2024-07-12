@@ -92,11 +92,12 @@ const Home: React.FC = () => {
         <br />
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
         <p className="text-lg ml-4 mb-4">
-          This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed.
+          This study explores how the varying type of entities shape ethical practices and market dynamics in the biotech and pharmaceutical industries. It examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. The findings highlight the intricate relationship between ownership, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts.
         </p>
         <div className="responsive-iframe-container">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7EGYHxssSrXEp5NHdg3zIz-eiSmYkJYwP4feLeuX920nrPw/viewform?embedded=true">Loading…</iframe>
         </div>
+        <br></br>
         <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
