@@ -8,6 +8,7 @@ const Home: React.FC = () => {
     <div className="home-container">
       <Navbar />
       <main className="home-content">
+      <meta name="viewport" content="width=device-width" />
         <section className="text-center max-w-4xl mx-auto mb-8">
           <h1 className="mb-4 ml-4 text-4xl font-bold">Welcome!</h1>
           <p className="mb-4 ml-4 text-lg">

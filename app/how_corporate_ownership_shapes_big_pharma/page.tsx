@@ -33,17 +33,9 @@ const osItems: TimelineItemProps[] = [
 const finItems: TimelineItemProps[] = [
   { 
     id: 1, 
-    title: 'Institutional Investment', 
+    title: 'State Backing', 
     content: `
-    Overview: Few investment firms own large stakes in many biotech/pharma companies
-    `,
-    imageUrl: '/investment_firms.png'
-  },
-  { 
-    id: 2, 
-    title: 'Test', 
-    content: `
-      Overview: Test
+    Bayh-Dole Act of 1980: Through this legislation, the NIH was able to directly fund research dependent industries; the rate of funding subsequently increased at an average rate of 2.9% per year till the mid-2000s where it became more than half of non-defense public R&D [30][31]. By then, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [29]. This funding has been highly effective for the biotech industry—Vallas et al. (2011) estimate that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages.
     `
   },
   { 
@@ -52,6 +44,14 @@ const finItems: TimelineItemProps[] = [
     content: `
       Overview: Test
     `
+  },
+  { 
+    id: 3, 
+    title: 'Institutional Investment', 
+    content: `
+    Network of Investments: Few investment firms own large stakes in many biotech/pharma companies
+    `,
+    imageUrl: '/investment_firms.png'
   },
 ];
 
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
           <li>Nonprofits, NGOs, and SROs</li>
           <li>Companies in Regulatory Roles</li>
         </ul>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators<sup>1</sup></h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {osItems.map(item => (
@@ -107,7 +107,7 @@ const Home: React.FC = () => {
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights<sup>2</sup><sup>,</sup><sup>3</sup></h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {finItems.map(item => (
