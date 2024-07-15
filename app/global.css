@@ -125,7 +125,7 @@ body {
 
 .img-box {
   flex: 0 0 auto;
-  width: 90%;
+  width: 100%;
   padding: 15px;
   margin: 0 auto;
 }
