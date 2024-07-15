@@ -9,7 +9,7 @@
 
 /* General */
 body {
-  background-color: #f9f9f9; /* Light mode background color */
+  background-color: #A9A9A9; /* Light mode background color */
   margin: 0;
   padding-top: 4rem; /* Adjust as needed */
   padding-right: 5px;
@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  background-color: #f9f9f9; 
   min-height: 100vh;
   max-width: 900px; /* Set a max-width to constrain the site */
   margin: 0 auto;

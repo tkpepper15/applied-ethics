@@ -14,9 +14,9 @@ const osItems: TimelineItemProps[] = [
   },
   {
     id: 2,
-    title: 'Nonprofits, NGOs, and SROs',
+    title: 'Non-Governmental Organizations',
     content: `
-      Definition: Organizations that regulate industries, whether through governmental influence, public interest, ethical considerations, or self-regulation via standards, codes of conduct, or industry associations.
+      Definition: Organizations that regulate industries, whether through governmental influence, public interest, ethical considerations, or self-regulation (SROs) via standards, codes of conduct, or industry associations.
       Examples: Bill and Melinda Gates Foundation (public health), Ford Foundation (social justice), New York Stock Exchange (finance)
     `
   },
@@ -64,7 +64,7 @@ const sentItems: TimelineItemProps[] = [
 Negative: 
 Positive:
 ` },
-  { id: 2, title: 'Nonprofits, NGOs, and SROs', content: `
+  { id: 2, title: 'Non-Governmental Organizations', content: `
 Negative:
 Positive:
 ` },
