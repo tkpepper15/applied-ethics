@@ -131,7 +131,7 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
         <div className="pr-4">    
         <p className="mb-4 ml-4">
-          Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes—at least in the ideal world.
+          Comparing <strong>Eli Lilly (USA)</strong> and <strong>Novo Nordisk (Denmark)</strong> highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes—at least in the ideal world.
         <br></br>
         <br></br>
           The data below indicates that 
