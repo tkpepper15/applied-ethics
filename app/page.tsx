@@ -53,14 +53,6 @@ const Home: React.FC = () => {
             How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health
           </a>
           </div>
-          <h1 className="ml-4 mb-4 text-2xl font-bold">Relevant Statistics</h1>
-          <div className="timeline-container">
-            <div id="timeline" className="timeline flex">
-              {surveyItems.map(item => (
-                <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} />
-              ))}
-            </div>
-          </div>
         </section>
       </main>
     </div>

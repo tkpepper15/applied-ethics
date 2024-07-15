@@ -82,7 +82,7 @@ const Main: React.FC = () => {
         <meta name="viewport" content="width=device-width" />
         <h1 className="mb-4 text-4xl font-bold ml-4">How Market Regulators Shape the Biotech and Pharma Industries: A Survey on Ethics and Public Health</h1>
         <p className="text-sm ml-4 mb-6">Tejjas Kaul</p>
-        <div className="pl-4">         
+        <div className="ml-4">
           <img
             src="./schools.png"
             alt="schools"
@@ -131,8 +131,18 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Case Study</h1>
         <div className="pr-4">    
         <p className="mb-4 ml-4">
-          Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes.
+          Comparing Eli Lilly (USA) and Novo Nordisk (Denmark) highlights the impact of different ownership structures on pharmaceutical innovation and public health. Eli Lilly, a publicly traded corporation, focuses on maximizing profits and shareholder value, driving large-scale R&D and innovation. In contrast, Novo Nordisk, partially owned by a foundation, balances profit with public interest goals, ensuring a strong commitment to accessibility and long-term health outcomes—at least in the ideal world.
+        <br></br>
+        <br></br>
+          The data below indicates that 
         </p>
+
+        <div className="img-box">
+        <img
+            src="./lillynovostocks.png"
+            alt="schools"
+          ></img>
+        </div>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
         <div className="reference-box">    
