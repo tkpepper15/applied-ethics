@@ -9,11 +9,11 @@
 
 /* General */
 body {
-  background-color: #A9A9A9; /* Light mode background color */
+  background-color: #F1F1EF; /* Light mode background color */
   margin: 0;
   padding-top: 4rem; /* Adjust as needed */
   padding-right: 5px;
-  color: #333; /* Dark text color */
+  color: #37352F; /* Dark text color */
   font-family: Arial, sans-serif; /* Update with your preferred font stack */
 }
 
@@ -42,7 +42,6 @@ body {
   align-items: start;
   background-color: #f9f9f9; 
   min-height: 100vh;
-  max-width: 900px; /* Set a max-width to constrain the site */
   margin: 0 auto;
 }
 
@@ -199,6 +198,7 @@ body {
 
   .home-container {
     padding-top: 20px;
+    max-width: 800px; /* Set a max-width to constrain the site */
   }
 }
 
