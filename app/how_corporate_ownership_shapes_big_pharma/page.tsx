@@ -46,7 +46,12 @@ const finItems: TimelineItemProps[] = [
     id: 3, 
     title: 'Charitable Spending', 
     content: `
-      Overview: Test
+    While foundations in the United States have managed to invest billions into pharma/biotech research, __
+    Pitfalls of Direct Investment:
+    • Nonprofits can't access the same investment channels as for-profits for R&D funding.
+    • The FDA's user fees apply to all drug manufacturers, hindering nonprofit growth.
+    • Current drug distribution networks favor high-priced drugs, disadvantaging nonprofits.
+    • Medicare and Medicaid reimbursement policies conflict with nonprofits’ mission to offer lower-cost drugs.
     `
   },
   { 
@@ -57,21 +62,6 @@ const finItems: TimelineItemProps[] = [
     `,
     imageUrl: '/investment_firms.png'
   },
-];
-
-const sentItems: TimelineItemProps[] = [
-  { id: 2, title: 'Government Bodies', content: `
-Negative: 
-Positive:
-` },
-  { id: 2, title: 'Non-Governmental Organizations', content: `
-Negative:
-Positive:
-` },
-{ id: 2, title: 'Companies in Regulatory Roles', content: `
-Negative: Many doctors believe that pharma’s corporate ownership worsens the patient care system.
-Positive:
-` },
 ];
 
 const Main: React.FC = () => {
@@ -93,7 +83,7 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
         <div className="pr-4">         
         <p className="text-lg ml-4 mb-4">
-          This study explores how the different categories of entities each shape ethical practices and market dynamics in the biotech and pharmaceutical industries. 
+          This study explores how the different categories of entities each shape ethical practices and market dynamics in the biotech and pharmaceutical industries, primarily in America. 
           It particularly examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. 
           To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. 
           The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts. 
@@ -104,7 +94,7 @@ const Main: React.FC = () => {
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7EGYHxssSrXEp5NHdg3zIz-eiSmYkJYwP4feLeuX920nrPw/viewform?embedded=true">Loading…</iframe>
         </div>
         <br></br>
-        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulators</h1>
+        <h1 className="ml-4 mb-4 text-2xl font-bold">Market Regulator Types</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {osItems.map(item => (
@@ -112,19 +102,11 @@ const Main: React.FC = () => {
             ))}
           </div>
         </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial Insights</h1>
+        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial & Legislative Insights</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
             {finItems.map(item => (
               <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} imageUrl={item.imageUrl} />
-            ))}
-          </div>
-        </div>
-        <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Expert Sentiments</h1>
-        <div className="timeline-container">
-          <div id="timeline" className="timeline flex">
-            {sentItems.map(item => (
-              <TimelineItem key={item.id} id={item.id} title={item.title} content={item.content} />
             ))}
           </div>
         </div>
@@ -135,14 +117,26 @@ const Main: React.FC = () => {
         </p>
         <div className="img-box">
         <img
-            src="./lillynovo.png"
+            src="./lillynovo.svg"
             alt="schools"
           ></img>
+        </div>
+        <div className="fig-box">  
+        <p><strong>Figure 1.</strong> A Comprehensive Comparison of Lilly and Novo [].</p>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-xl font-bold">Recent Developments</h1>
         <p className="mb-4 ml-4">
           Recent events highlight the competitive landscape and strategic differences between these companies. On July 9, 2024, Novo Nordisk&apos;s shares dropped by 1.9% following a data analysis published in JAMA Internal Medicine. The analysis compared the weight-loss efficacy of Eli Lilly&apos;s drug Mounjaro, containing tirzepatide, with Novo Nordisk&apos;s Ozempic, containing semaglutide. The study found that patients taking Mounjaro were significantly more likely to experience substantial weight loss compared to those taking Ozempic. This finding underscores Eli Lilly&apos;s strong position in the burgeoning weight-loss drug market, which could be worth $150 billion annually by the early 2030s. Despite this, Novo Nordisk emphasized the need for head-to-head clinical trials to make definitive comparisons, highlighting their commitment to rigorous scientific validation.
         </p>
+        <div className="img-box">
+        <img
+            src="./importanceofstudies.svg"
+            alt="importanceofstudies"
+          ></img>
+        </div>
+        <div className="fig-box">  
+        <p><strong>Figure 2.</strong> The Stock Market Ripple of Obesity and Diabetes Drugs [].</p>
+        </div>
         <h1 className="ml-4 mt-8 mb-4 text-xl font-bold">Legal and Structural Influences</h1>
         <p className="mb-4 ml-4">
         The legal frameworks governing each company have also played a crucial role in shaping their strategies and market behaviors. In the United States, Eli Lilly operates under laws that prioritize shareholder interests, driving a focus on profitability and return on investment. This legal environment encourages aggressive R&D spending and competitive pricing strategies aimed at maximizing revenue. For instance, Eli Lilly&apos;s significant investment in developing innovative drugs like Mounjaro reflects the company&apos;s strategy to capture high-revenue markets despite higher drug prices, which can limit accessibility for lower-income populations.
