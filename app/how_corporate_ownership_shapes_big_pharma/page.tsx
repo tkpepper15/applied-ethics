@@ -102,6 +102,19 @@ const Main: React.FC = () => {
             ))}
           </div>
         </div>
+        <br></br>
+        <div className="responsive-iframe-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/t8pgUkUcseo"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <p className="mb-4 ml-4"> The video above was a part of the deliverables for the program. Please consider the information on foundation ownership to make your judgements. </p>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial & Legislative Insights</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
