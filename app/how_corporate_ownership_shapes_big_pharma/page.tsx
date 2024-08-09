@@ -96,7 +96,7 @@ Data were collected through a mixed-methods approach, combining qualitative anal
 <br></br>
 <br></br>
 <strong>Results</strong>:
-By analyzing the survey design, the study highlights the public's views on the ethical behavior of different regulators and their preference for those prioritizing public health over profit. The findings underscore the intricate relationship between public sentiment, ethical governance, and industry behavior.
+By analyzing the survey design, the study highlights the public&apos;s views on the ethical behavior of different regulators and their preference for those prioritizing public health over profit. The findings underscore the intricate relationship between public sentiment, ethical governance, and industry behavior.
 <br></br>
 <br></br>
 <strong>Conclusion</strong>:
@@ -127,7 +127,9 @@ The research contributes to the discourse on the governance of the biotech and p
                 allowFullScreen
               ></iframe>
             </div>
-            <p className="mb-4 ml-4"> The video above was a part of the deliverables for the program. Please consider the information on foundation ownership to make your judgements. </p>
+            <div className="fig-box">  
+            <p className="mb-4 ml-4">This video was a deliverable for the program; it was shown to peers, faculty, and industry.</p>
+            </div>
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">Financial & Legislative Insights</h1>
         <div className="timeline-container">
           <div id="timeline" className="timeline flex">
@@ -185,7 +187,7 @@ The research contributes to the discourse on the governance of the biotech and p
 [5] Yahoo Finance. (2024). Yahoo Finance - Business Finance, Stock Market, Quotes, News. Yahoo Finance. https://finance.yahoo.com/
 <br></br>
 <br></br>
-Special thanks to Dr. Sowers, Professor Waitzkin, and the rest of the Duke Applied Ethics+ team for their help along the way!
+<i>Special thanks to Dr. Sowers, Professor Waitzkin, and the rest of the Duke Applied Ethics+ team for their help along the way!</i>
         </p>
       </div>
       </main>
