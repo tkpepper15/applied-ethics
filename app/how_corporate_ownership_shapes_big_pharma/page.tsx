@@ -37,9 +37,9 @@ const finItems: TimelineItemProps[] = [
     title: 'Federal Funding', 
     content: `
     Bayh-Dole Act of 1980: Established a uniform patent policy for federal research funding agencies, allowing universities, small businesses, and nonprofits to retain ownership of inventions from federally funded research.
-    • The rate of funding from the NIH increased at an average annual rate of 2.9% until the mid-2000s, when it exceeded half of non-defense public R&D [4]. 
-    • By 2000, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [5]. 
-    • Vallas et al. (2011) estimated that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages [6].
+    • The rate of funding from the NIH increased at an average annual rate of 2.9% until the mid-2000s, when it exceeded half of non-defense public R&D [2]. 
+    • By 2000, the four largest biotech companies—Genentech, Biogen, Idex, and Serono—derived 90% of their revenue from drugs that were advantaged by the Act [3]. 
+    • Vallas et al. (2011) estimated that 13 of the 15 blockbuster biotech drugs available in 2007 received NIH support during their early development stages [4].
     `
   },
   { 
@@ -58,7 +58,7 @@ const finItems: TimelineItemProps[] = [
     id: 3, 
     title: 'Institutional Investment', 
     content: `
-    Network of Investments: Few investment firms own large stakes in many biotech/pharma companies
+    Network of Investments: Few investment firms own large stakes in many biotech/pharma companies as shown in the image below [1]: 
     `,
     imageUrl: '/investment_firms.png'
   },
@@ -83,11 +83,24 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mb-4 text-2xl font-bold">Abstract</h1>
         <div className="pr-4">         
         <p className="text-lg ml-4 mb-4">
-          This study explores how the different categories of entities each shape ethical practices and market dynamics in the biotech and pharmaceutical industries, primarily in America. 
-          It particularly examines regulatory bodies, independent regulators, and corporate entities to analyze their roles in setting industry standards and impacting public health outcomes. 
-          To understand the public preception of the ideal entity to lead the charge, a pre-post survey is employed. 
-          The results will then be analyzed to draw conclusions about the public preception of the drug industry and its catalysts. 
-          The findings highlight the intricate relationship between the general public, ethics, and industry behavior, emphasizing the need for informed governance to maximize societal benefits. 
+<strong>Background</strong>:
+This study investigates the impact of various regulatory entities on ethical practices and market dynamics within the biotechnology and pharmaceutical industries in the United States. It examines the roles of government bodies, non-governmental organizations (NGOs), and corporate entities in setting industry standards and influencing public health outcomes.
+<br></br>
+<br></br>
+<strong>Objective</strong>:
+The research aims to understand public perception of the ideal regulatory entity through a pre-post survey methodology. 
+<br></br>
+<br></br>
+<strong>Methods</strong>:
+Data were collected through a mixed-methods approach, combining qualitative analysis of legal documents and quantitative data. A case study comparing Eli Lilly (USA) and Novo Nordisk (Denmark) illustrates the impact of different ownership structures on regulatory practices. The results were visualized through an interactive dashboard, enhancing user experience and accessibility.
+<br></br>
+<br></br>
+<strong>Results</strong>:
+By analyzing the survey design, the study highlights the public's views on the ethical behavior of different regulators and their preference for those prioritizing public health over profit. The findings underscore the intricate relationship between public sentiment, ethical governance, and industry behavior.
+<br></br>
+<br></br>
+<strong>Conclusion</strong>:
+The research contributes to the discourse on the governance of the biotech and pharma industries, suggesting that ease of use can relate to stronger ethical regulators that can, in turn, enhance public health in these critical sectors.
         </p>
         </div>
         <div className="responsive-iframe-container">
@@ -135,7 +148,7 @@ const Main: React.FC = () => {
           ></img>
         </div>
         <div className="fig-box">  
-        <p><strong>Figure 1.</strong> A Comprehensive Comparison of Lilly and Novo [].</p>
+        <p><strong>Figure 1.</strong> A Comprehensive Comparison of Lilly and Novo [5].</p>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-xl font-bold">Recent Developments</h1>
         <p className="mb-4 ml-4">
@@ -148,7 +161,7 @@ const Main: React.FC = () => {
           ></img>
         </div>
         <div className="fig-box">  
-        <p><strong>Figure 2.</strong> The Stock Market Ripple of Obesity and Diabetes Drugs [].</p>
+        <p><strong>Figure 2.</strong> The Stock Market Ripple of Obesity and Diabetes Drugs [5].</p>
         </div>
         <h1 className="ml-4 mt-8 mb-4 text-xl font-bold">Legal and Structural Influences</h1>
         <p className="mb-4 ml-4">
@@ -161,12 +174,18 @@ const Main: React.FC = () => {
         <h1 className="ml-4 mt-8 mb-4 text-2xl font-bold">References</h1>
         <div className="reference-box">    
         <p className="text-lg ml-4 mb-4">
-[4] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
+[1] Banal-Estañol, A., Newham, M., & Seldeslachts, J. (2021). Common Ownership in the U.S. Pharmaceutical Industry: A Network Analysis. The Antitrust Bulletin, 66(1), 68–99. https://doi.org/10.1177/0003603x20985796
+    <br></br>
+[2] Boadi, Kwame. “Erosion of Funding for the National Institutes of Health Threatens U.S. Leadership in Biomedical Research” CAP (2014).
 <br></br>
-[5] Lazonick, William, and Öner Tulum. “US biopharmaceutical finance and the sustainability of the biotech business model.” Research Policy 40.9 (2011): 1170-1187.
+[3] Lazonick, William, and Öner Tulum. “US biopharmaceutical finance and the sustainability of the biotech business model.” Research Policy 40.9 (2011): 1170-1187.
 <br></br>
-[6] Vallas, Steven, Kleinman, Daniel and Biscotti, Dina. “Political Structures and the making of US Biotechnology” in State of Innovation: The U.S. Government&apos;s Role in Technology Development (2011). Paradigm Publishers.
+[4] Vallas, Steven, Kleinman, Daniel and Biscotti, Dina. “Political Structures and the making of US Biotechnology” in State of Innovation: The U.S. Government&apos;s Role in Technology Development (2011). Paradigm Publishers.
 <br></br>
+[5] Yahoo Finance. (2024). Yahoo Finance - Business Finance, Stock Market, Quotes, News. Yahoo Finance. https://finance.yahoo.com/
+<br></br>
+<br></br>
+Special thanks to Dr. Sowers, Professor Waitzkin, and the rest of the Duke Applied Ethics+ team for their help along the way!
         </p>
       </div>
       </main>
