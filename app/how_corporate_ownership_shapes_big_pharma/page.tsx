@@ -46,7 +46,7 @@ const finItems: TimelineItemProps[] = [
     id: 3, 
     title: 'Charitable Spending', 
     content: `
-    While foundations in the United States have managed to invest billions into pharma/biotech research, __
+    While foundations in the United States have managed to invest billions into pharma/biotech research, there are some inherent drawbacks to such involvement.
     Pitfalls of Direct Investment:
     • Nonprofits can't access the same investment channels as for-profits for R&D funding.
     • The FDA's user fees apply to all drug manufacturers, hindering nonprofit growth.
