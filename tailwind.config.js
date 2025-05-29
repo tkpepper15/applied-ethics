@@ -29,9 +29,28 @@ module.exports = {
           800: "#1e40af",
           900: "#1e3a8a",
         },
+        offwhite: "#f8f7f3",
+        cream: "#f5f2e9",
+        azure: {
+          100: "#e6f1f8",
+          200: "#cce4f1",
+          300: "#a3cae6",
+        },
+        charcoal: {
+          100: "#4a4a48",
+          200: "#343432",
+          300: "#222221",
+        },
       },
       fontFamily: {
-        body: [
+        serif: [
+          "Playfair Display",
+          "Garamond",
+          "Georgia",
+          "Times New Roman",
+          "serif",
+        ],
+        sans: [
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -48,7 +67,7 @@ module.exports = {
           "Segoe UI Symbol",
           "Noto Color Emoji",
         ],
-        sans: [
+        body: [
           "Inter",
           "ui-sans-serif",
           "system-ui",
