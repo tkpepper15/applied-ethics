@@ -85,24 +85,19 @@ const Main: React.FC = () => {
         <h2 className="font-serif text-2xl mb-4 font-medium">Abstract</h2>
         <div className="mb-8">         
           <p className="text-base mb-4">
-            <strong>Background</strong>:
-            This study investigates the impact of various regulatory entities on ethical practices and market dynamics within the biotechnology and pharmaceutical industries in the United States. It examines the roles of government bodies, non-governmental organizations (NGOs), and corporate entities in setting industry standards and influencing public health outcomes.
+            <strong>Background:</strong> This study explores various regulatory entities and the influence of their ethics on market dynamics within the biotechnology (biotech) and pharmaceutical (pharma) industries in the United States. In addition to assessing the role of traditional government bodies, the inadvertent hand of non-governmental organizations (NGOs), and corporate entities in impacting industry standards and public health outcomes is also investigated.
           </p>
           <p className="text-base mb-4">
-            <strong>Objective</strong>:
-            The research aims to understand public perception of the ideal regulatory entity through a pre-post survey methodology. 
+            <strong>Objective:</strong> The research aims to understand public perception of the ideal regulatory entity through a pre-post survey methodology.
           </p>
           <p className="text-base mb-4">
-            <strong>Methods</strong>:
-            Data were collected through a mixed-methods approach, combining qualitative analysis of legal documents and quantitative data. A case study comparing Eli Lilly (USA) and Novo Nordisk (Denmark) illustrates the impact of different ownership structures on regulatory practices. The results were visualized through an interactive dashboard, enhancing user experience and accessibility.
+            <strong>Methods:</strong> Data were collected through a mixed-methods approach; a qualitative analysis of legal documents and quantitative data was concatenated. A case study comparing Eli Lilly (USA) and Novo Nordisk (Denmark) illustrates the impact of different ownership structures on regulatory practices. The results were visualized through an interactive dashboard, enhancing user experience and accessibility.
           </p>
           <p className="text-base mb-4">
-            <strong>Results</strong>:
-            By analyzing the survey design, the study highlights the public&apos;s views on the ethical behavior of different regulators and their preference for those prioritizing public health over profit. The findings underscore the intricate relationship between public sentiment, ethical governance, and industry behavior.
+            <strong>Results:</strong> By analyzing the survey design, the study highlights the views of the public on the ethical behavior of different regulators and their preference for those prioritizing public health over profit. The findings underscore the intricate relationship between public sentiment, ethical governance, and industry behavior.
           </p>
           <p className="text-base mb-4">
-            <strong>Conclusion</strong>:
-            The research contributes to the discourse on the governance of the biotech and pharma industries, suggesting that ease of use can relate to stronger ethical regulators that can, in turn, enhance public health in these critical sectors.
+            <strong>Conclusion:</strong> The research contributes to the discourse on the governance of the biotech and pharma industries, suggesting that ease of use can relate to stronger ethical regulators that can, in turn, enhance public health in these critical sectors.
           </p>
         </div>
         
@@ -157,7 +152,7 @@ const Main: React.FC = () => {
           
           <h3 className="font-serif text-xl mb-4 font-medium">Recent Developments</h3>
           <p className="mb-6">
-            Recent events highlight the competitive landscape and strategic differences between these companies. On July 9, 2024, Novo Nordisk&apos;s shares dropped by 1.9% following a data analysis published in JAMA Internal Medicine. The analysis compared the weight-loss efficacy of Eli Lilly&apos;s drug Mounjaro, containing tirzepatide, with Novo Nordisk&apos;s Ozempic, containing semaglutide. The study found that patients taking Mounjaro were significantly more likely to experience substantial weight loss compared to those taking Ozempic. This finding underscores Eli Lilly&apos;s strong position in the burgeoning weight-loss drug market, which could be worth $150 billion annually by the early 2030s. Despite this, Novo Nordisk emphasized the need for head-to-head clinical trials to make definitive comparisons, highlighting their commitment to rigorous scientific validation.
+            On July 9, 2024, Novo Nordisk&apos;s shares dropped by 1.9% following a data analysis published in JAMA Internal Medicine. The analysis discerned sweeping claims regarding the weight-loss efficacy of Eli Lilly&apos;s drug Mounjaro, containing tirzepatide, with Novo Nordisk&apos;s Ozempic, containing semaglutide. Based on trial data, patients taking Mounjaro were significantly more likely to experience substantial weight loss compared to those taking Ozempic. Eli Lilly&apos;s strong position in the burgeoning weight-loss drug market, which could be worth $150 billion annually by the early 2030s is undoubtedly likely to continue growing. Despite this, Novo Nordisk emphasized the need for head-to-head clinical trials to make definitive comparisons, highlighting their commitment to rigorous scientific validation and the constant back-and-forth of competition.
           </p>
           <div className="figure mb-8">
             <div className="figure-content">
@@ -174,10 +169,10 @@ const Main: React.FC = () => {
           
           <h3 className="font-serif text-xl mb-4 font-medium">Legal and Structural Influences</h3>
           <p className="mb-6">
-            The legal frameworks governing each company have also played a crucial role in shaping their strategies and market behaviors. In the United States, Eli Lilly operates under laws that prioritize shareholder interests, driving a focus on profitability and return on investment. This legal environment encourages aggressive R&D spending and competitive pricing strategies aimed at maximizing revenue. For instance, Eli Lilly&apos;s significant investment in developing innovative drugs like Mounjaro reflects the company&apos;s strategy to capture high-revenue markets despite higher drug prices, which can limit accessibility for lower-income populations.
+            Additionally, the legal frameworks governing each company have also shaped their market behaviors. In the United States, Eli Lilly operates under laws that prioritize shareholder interests, and in turn, there is an apparent focus on profitability and return on investment. This legal environment encourages aggressive R&D spending and competitive pricing strategies aimed at maximizing revenue. Eli Lilly&apos;s significant investment in developing innovative drugs like Mounjaro instead of heavily funding rare disease research reflects the company&apos;s strategy to capture high-revenue markets despite higher drug prices—meanwhile, accessibility for lower-income populations is limited.
           </p>
           <p className="mb-6">
-            In contrast, Denmark&apos;s legal environment for Novo Nordisk, influenced by its partial foundation ownership, encourages a more balanced approach. Danish laws and the foundation&apos;s charter mandate a focus on both profitability and public welfare. This structure ensures that Novo Nordisk not only invests in innovative treatments but also prioritizes accessibility and long-term public health goals. The foundation ownership model supports comprehensive public health initiatives and sustainable practices, aligning the company&apos;s operations with broader societal benefits.
+            In contrast, Denmark&apos;s legal environment for Novo Nordisk is influenced by its partial foundation ownership; thus, a more balanced economic approach is feasible. Danish laws and the foundation&apos;s charter mandate a focus on both profitability and public welfare. This structure ensures that Novo Nordisk not only invests in innovative treatments but also prioritizes accessibility and long-term public health goals. The foundation ownership model supports comprehensive public health initiatives which aligns the company&apos;s operations with broader societal benefits.
           </p>
         </div>
         
