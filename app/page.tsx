@@ -13,10 +13,10 @@ const Home: React.FC = () => {
           <h1 className="font-serif text-3xl sm:text-4xl mb-6 sm:mb-8 text-center">Applied Ethics</h1>
           <div className="mx-auto">
             <p className="text-base sm:text-lg mb-6 sm:mb-8 text-center font-serif text-charcoal-200 max-w-2xl mx-auto">
-              This site aims to assess the public&apos;s current understanding and raise awareness about ethical issues in industry.
+              This site investigates the public&apos;s current understanding of ethical issues in the biotechnology and pharmaceutical industries.
             </p>
             <p className="text-center text-charcoal-100 mb-10 sm:mb-12 text-sm sm:text-base max-w-2xl mx-auto">
-              Built by <a className="hover:text-azure-300 transition-colors border-b border-azure-100" href="https://www.linkedin.com/in/tejjas-kaul-36091a22b/" target="_blank" rel="noopener noreferrer">Tejjas Kaul</a> as part of the NCSSM SRIP and Duke Applied Ethics+ Summer Programs.
+              Built by <a className="hover:text-azure-300 transition-colors border-b border-azure-100" href="https://www.linkedin.com/in/tejjas-kaul-36091a22b/" target="_blank" rel="noopener noreferrer">Tejjas Kaul</a> as part of the <a className="hover:text-azure-300 transition-colors border-b border-azure-100" href="https://research-innovation.ncssm.edu/summer-ri-program#h.m0ynxe9icdfe" target="_blank" rel="noopener noreferrer">NC School of Science & Math's Research Initiative</a> as well as <a className="hover:text-azure-300 transition-colors border-b border-azure-100" href="https://scienceandsociety.duke.edu/how-mission-orientations-ethical-beliefs-and-ownership-structures-have-shaped-the-growth-of-companies-and-their-impacts-on-the-world/" target="_blank" rel="noopener noreferrer">Duke's Applied Ethics+ Summer Program</a>.
             </p>
           </div>
           
