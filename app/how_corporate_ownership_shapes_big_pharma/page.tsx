@@ -88,7 +88,7 @@ const Main: React.FC = () => {
             <strong>Background:</strong> This study explores various regulatory entities and the influence of their ethics on market dynamics within the biotechnology (biotech) and pharmaceutical (pharma) industries in the United States. In addition to assessing the role of traditional government bodies, the inadvertent hand of non-governmental organizations (NGOs), and corporate entities in impacting industry standards and public health outcomes is also investigated.
           </p>
           <p className="text-base mb-4">
-            <strong>Objective:</strong> The research aims to understand public perception of the ideal regulatory entity through a pre-post survey methodology.
+            <strong>Objective:</strong> The research aims to understand public perception of the ideal regulatory entity in the biotech and pharma industries through a pre-post survey methodology.
           </p>
           <p className="text-base mb-4">
             <strong>Methods:</strong> Data were collected through a mixed-methods approach; a qualitative analysis of legal documents and quantitative data was concatenated. A case study comparing Eli Lilly (USA) and Novo Nordisk (Denmark) illustrates the impact of different ownership structures on regulatory practices. The results were visualized through an interactive dashboard, enhancing user experience and accessibility.
